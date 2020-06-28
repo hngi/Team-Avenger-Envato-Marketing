@@ -1,0 +1,98 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+.navbar {
+font-family: 'Open Sans', sans-serif;
+
+}
+.landing {
+  background: url(../assets/austin.jpg) no-repeat;
+  background-size: cover;
+  width:100% ;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  color: white;
+  font-family: 'Merriweather', serif
+}
+#idea {
+  background: white;
+  color: black;
+}
+
+.dark {
+  color: #000000;
+  font-size: 18px;
+  line-height: 25px
+}
+
+.brand {
+  font-weight: bold;
+font-size: 24px;
+}
+
+.colored {
+  color: #4200FF;
+}
+
+.button {
+  font-family: 'Work Sans', sans-serif;
+  /* font-size: 16px; */
+  letter-spacing: 0.5px;
+color: white;
+background: #4200FF;
+border-radius: 0;
+
+}
+
+
+.services {
+  background: rgba(66, 0, 255, 0.03);
+}
+
+.card {
+  background: rgba(66, 0, 255, 0.03);
+  width: 18rem;
+height: 18rem;
+color: #666666;
+}
+
+.card-title {
+  color: #000000;
+}
+
+.rounded-circle {
+  width: 75px;
+  height: 75px;
+background-size: cover;
+}
+
+.price {
+  font-size: 52px;
+line-height: 80px;
+letter-spacing: 2px;
+color: #4200FF;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #D8D8D8;
+}
+.carousel-indicators .active{
+  /* width: 10px;
+  height: 10px; */
+  border-radius: 100%;
+  background-color: black;
+}
+
+.test {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #444444;
+}
