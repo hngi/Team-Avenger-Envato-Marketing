@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;500&display=swap");
+body {
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  /* padding-top: 65px; */
+  font-family: "Montserrat", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  /* background: #010101; */
+}
+body {
+  min-height: 200vh;
+}
+.navbar {
+  transition: 500ms ease;
+  background: transparent;
+}
+.navbar.scrolled {
+  background: #fafafc;
+}
+.nav-link,
+.navbar-brand {
+  color: #021853;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+}
+.nav-link:hover,
+.navbar-brand span {
+  color: #f2c94c;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.nav-item a {
+  font-family: "Roboto", sans-serif;
+  /* font-size: 1.5rem; */
+}
+.navbar-dark .navbar-toggler-icon {
+  color: red;
+  border-color: rgb(255, 102, 203);
+}
+section:nth-of-type(1) {
+  height: 100vh;
+  width: 100%;
+}
+.header {
+  background: #ffffff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: url("../img/header.svg");
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: calc(100% - 55px);
+  background-position-y: top;
+}
+.header h1 {
+  letter-spacing: 0.03em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #021853;
+}
+.header h4 {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 500; */
+
+  color: rgba(2, 24, 83, 0.6);
+}
+.header button {
+  height: 55px;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 0;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  background: linear-gradient(90deg, #f46311 30%, rgba(255, 153, 0, 0) 170.5%);
+}
+/* .header h4:nth-child(1) {
+  font-weight: 500;
+  color: #ff5c01;
+} */
+@media (max-width: 576px) {
+  .header {
+    height: 400px;
+  }
+}
+.small-orange {
+  /* font-style: normal; */
+  font-weight: 500;
+  /* font-size: 24px; */
+  font-family: "Roboto", sans-serif;
+  color: #ff5c01;
+}
+.bg-orange {
+  background: #ff5c01;
+}
+.button-big {
+  width: 200px;
+  height: 55px;
+}
+.big-blue {
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 2.1rem; */
+  font-style: normal;
+  color: #021853;
+  font-weight: bold;
+}
+.tiny-blue {
+  color: rgba(2, 24, 83, 0.6);
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
+.servicesCol {
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-position: center;
+  position: relative;
+  padding-top: 95px;
+}
+.servicesList h1 {
+  font-weight: 600;
+  font-size: 1.26rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+.servicesList p {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.servSection {
+  background: #fafafc;
+}
+.circleImg,
+.divImg {
+  height: 100px;
+  width: 100px;
+}
+.servicesImg {
+  position: absolute;
+  left: 0;
+  right: -2px;
+  top: 10px;
+}
+.spanImg {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 0;
+  top: -36px;
+}
+.servicesList {
+  /* padding-bottom: 115px; */
+}
+.servicesCol:nth-child(1),
+.servicesCol:nth-child(2) {
+  margin-right: 3.5rem !important;
+}
+.chooseUs {
+  background: #021853;
+}
+.v-divider {
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  height: 71px;
+}
+@media (min-width: 1350px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+.reviewss .carousel-item {
+  min-height: 450px;
+  background: #ececec;
+  color: #000;
+  font-size: 24px;
+}
+.reviewss .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border: 4px solid #c4c4c4;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 1;
+  border: 0;
+}
+.reviewss {
+  background: url("/img/footr.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.reviewss .carousel-indicators li.active {
+  background-color: #021853;
+}
+.carousel-caption {
+  color: #000000;
+}
+.clientReview {
+  background: #ececec;
+}
+.reviewss .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.reviewss .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.reviewss .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 9999;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
