@@ -3,9 +3,16 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
 .navbar {
-font-family: 'Open Sans', sans-serif;
-
+  font-family: 'Open Sans', sans-serif;
 }
+
+.paragraph {
+  color: #666666;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
 .landing {
   background: url(../assets/austin.jpg) no-repeat;
   background-size: cover;
@@ -16,9 +23,14 @@ font-family: 'Open Sans', sans-serif;
   color: white;
   font-family: 'Merriweather', serif
 }
+
 #idea {
   background: white;
   color: black;
+}
+
+.splash {
+  padding: auto 0 auto 10%;
 }
 
 .dark {
@@ -38,24 +50,36 @@ font-size: 24px;
 
 .button {
   font-family: 'Work Sans', sans-serif;
-  /* font-size: 16px; */
   letter-spacing: 0.5px;
-color: white;
-background: #4200FF;
-border-radius: 0;
-
+  color: white;
+  background: #4200FF;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
+.button:hover {
+  background: #4200FF;
+  color: white;
+}
 
 .services {
   background: rgba(66, 0, 255, 0.03);
 }
 
+.carousel {
+  width: 65%;
+  margin: 0 auto;
+}
+
 .card {
   background: rgba(66, 0, 255, 0.03);
   width: 18rem;
-height: 18rem;
-color: #666666;
+  color: #666666;
+}
+
+.carousel-indicators {
+  bottom: -60px;
 }
 
 .card-title {
@@ -65,27 +89,27 @@ color: #666666;
 .rounded-circle {
   width: 75px;
   height: 75px;
-background-size: cover;
+  background-size: cover;
 }
 
 .price {
+  font-family: 'Merriweather', serif;
   font-size: 52px;
-line-height: 80px;
-letter-spacing: 2px;
-color: #4200FF;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #4200FF;
 }
 
 .carousel-indicators li {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   background-color: #D8D8D8;
 }
+
 .carousel-indicators .active{
-  /* width: 10px;
-  height: 10px; */
   border-radius: 100%;
-  background-color: black;
+  background-color: #4200FF;
 }
 
 .test {
@@ -95,4 +119,18 @@ color: #4200FF;
 
 .footer {
   background: #444444;
+  columns: white;
+  font-family: 'Work Sans', sans-serif; 
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #000000;
+  opacity: 0.3;
+}
+
+.form-control:focus{
+  border: none;
+  outline: none;
 }
