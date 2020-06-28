@@ -2,15 +2,17 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
-.navbar {
+#idea {
   font-family: 'Open Sans', sans-serif;
+  background: white;
+  color: black;
 }
 
 .paragraph {
   color: #666666;
   letter-spacing: 0.5px;
-  line-height: 30px;
-  font-size: 16px;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 .landing {
@@ -22,11 +24,6 @@ font-family: 'Work Sans', sans-serif; */
   background-position: center;
   color: white;
   font-family: 'Merriweather', serif
-}
-
-#idea {
-  background: white;
-  color: black;
 }
 
 .splash {
@@ -41,7 +38,7 @@ font-family: 'Work Sans', sans-serif; */
 
 .brand {
   font-weight: bold;
-font-size: 24px;
+  font-size: 24px;
 }
 
 .colored {
@@ -70,7 +67,7 @@ font-size: 24px;
 }
 
 .carousel {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -78,6 +75,7 @@ font-size: 24px;
   background: rgba(66, 0, 255, 0.03);
   width: 18rem;
   color: #666666;
+  margin-right: 0;
 }
 
 .carousel-indicators {
@@ -89,8 +87,8 @@ font-size: 24px;
 }
 
 .rounded-circle {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   background-size: cover;
 }
 
@@ -114,11 +112,6 @@ font-size: 24px;
   background-color: #4200FF;
 }
 
-.test {
-  width: 70%;
-  margin: 0 auto;
-}
-
 .footer {
   background: #444444;
   columns: white;
@@ -139,14 +132,24 @@ font-size: 24px;
 
 .banner::after {
   content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: black;
-opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .5;
 }
+
 .top {
 z-index: 100;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+  }
 }
