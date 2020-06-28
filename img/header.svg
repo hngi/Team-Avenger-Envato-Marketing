@@ -1,11 +1,12 @@
-<svg width="915" height="970" viewBox="0 0 915 970" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M1109 437.257C1051.44 686.581 733.826 516.635 576.083 970C281.761 970 0 592.969 0 298.743C0 4.51733 238.595 -234 532.917 -234C827.239 -234 1109 143.031 1109 437.257Z" fill="url(#pattern0)"/>
-<path d="M1109 437.257C1051.44 686.581 733.826 516.635 576.083 970C281.761 970 0 592.969 0 298.743C0 4.51733 238.595 -234 532.917 -234C827.239 -234 1109 143.031 1109 437.257Z" fill="url(#paint0_linear)" fill-opacity="0.3"/>
+<svg width="978" height="970" viewBox="0 0 978 970" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M1213.5 361.757C1197.77 429.82 1164.32 469.248 1120.28 497.87C1088.12 518.766 1050.35 533.892 1009.67 550.183C994.552 556.238 979.029 562.454 963.245 569.187C905.027 594.02 843.344 625.852 785.418 682.528C727.543 739.154 673.443 820.555 630.271 944.5C469.51 944.348 312.127 841.335 194.88 698.058C77.5501 554.68 0.5 371.085 0.5 210.186C0.5 -111.622 261.461 -372.5 583.373 -372.5C744.258 -372.5 901.786 -269.441 1019.12 -126.058C1136.44 17.3026 1213.48 200.871 1213.5 361.757Z" stroke="#FF5C01" stroke-opacity="0.7"/>
+<path d="M1172 437.257C1114.44 686.58 796.827 516.635 639.083 970C344.761 970 63 592.969 63 298.743C63 4.51733 301.595 -234 595.917 -234C890.239 -234 1172 143.031 1172 437.257Z" fill="url(#pattern0)"/>
+<path d="M1172 437.257C1114.44 686.58 796.827 516.635 639.083 970C344.761 970 63 592.969 63 298.743C63 4.51733 301.595 -234 595.917 -234C890.239 -234 1172 143.031 1172 437.257Z" fill="url(#paint0_linear)" fill-opacity="0.3"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(-0.223775) scale(0.00160839 0.00148148)"/>
 </pattern>
-<linearGradient id="paint0_linear" x1="554.5" y1="-234" x2="554.5" y2="970" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="617.5" y1="-234" x2="617.5" y2="970" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="1" stop-color="white" stop-opacity="0"/>
 </linearGradient>

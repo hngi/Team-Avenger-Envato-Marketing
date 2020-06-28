@@ -119,12 +119,31 @@ section:nth-of-type(1) {
   width: 200px;
   height: 55px;
 }
+.button-small {
+  width: 71px;
+  height: 22px;
+  font-size: 10px;
+  line-height: 1;
+}
+.button-small:hover,
+.button-big:hover {
+  color: #000000;
+  background: #faf7f852;
+}
+.email {
+  height: 31px;
+  width: 225px;
+  font-size: 12px;
+}
 .big-blue {
   font-family: "Montserrat", sans-serif;
   /* font-size: 2.1rem; */
   font-style: normal;
   color: #021853;
   font-weight: bold;
+}
+.bg-blue {
+  background: #021853;
 }
 .tiny-blue {
   color: rgba(2, 24, 83, 0.6);
@@ -195,7 +214,7 @@ section:nth-of-type(1) {
 }
 .reviewss .carousel-item {
   min-height: 450px;
-  background: #ececec;
+  /* background: #ececec; */
   color: #000;
   font-size: 24px;
 }
@@ -209,7 +228,7 @@ section:nth-of-type(1) {
   border: 0;
 }
 .reviewss {
-  background: url("/img/footr.png");
+  /* background: url("/img/footr.png"); */
   background-position: center;
   background-size: cover;
   position: relative;
@@ -230,6 +249,7 @@ section:nth-of-type(1) {
   right: 0;
   bottom: 0;
   left: 0;
+  padding-bottom: 33px;
 }
 .reviewss .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
@@ -248,4 +268,56 @@ section:nth-of-type(1) {
 .container {
   padding-left: 30px;
   padding-right: 30px;
+}
+/* .navbar-light .navbar-toggler-icon {
+  background-image: url(data:image/svg+xml,%3csvg xmlns=http://www.w3.org/2000/svg width=30 height=30 viewBox=0 0 30 30%3e%3cpath stroke=rgba%280, 0, 0, 0.5%29 stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=M4 7h22M4 15h22M4 23h22/%3e%3c/svg%3e);
+} */
+.carosel {
+  background: url(/img/carosel.png);
+  background-size: cover;
+  /* position: relative; */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  /* background-size: contain; */
+}
+.bg-imageBulb {
+  background: url(/img/beforeservice1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-imageHead {
+  background: url(/img/beforeservice2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sponsors img {
+  height: 50px;
+}
+.sponsors {
+  background: #f7f8fa;
+}
+.hrfooter {
+  border-top: 1px solid #ffffff66;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  bottom: 17px;
+  right: 27px;
+}
+.f-12 {
+  font-size: 10px !important;
 }
