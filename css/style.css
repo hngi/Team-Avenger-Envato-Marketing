@@ -215,7 +215,7 @@ h5 span {
   min-width: 125px;
 }
 .expandBiz {
-  min-width: 435px;
+  min-width: 370px;
   padding-left: 89px;
 }
 .expandBiz h3 {
@@ -234,7 +234,7 @@ h5 span {
 }
 @media (max-width: 440px) {
   .expandBiz {
-    min-width: 200px;
+    min-width: 212px;
   }
   .container {
     padding-left: 10px !important;
@@ -468,34 +468,9 @@ h5 span {
 }
 
 @media (max-width: 768px) {
-  .navig h5.custom,
-  .navig h1.custom {
-    color: #ffffff;
-    margin: 0;
-  }
-  .hid {
-    display: none;
-  }
-  .navig h4.custom {
-    color: #ffffff;
-    margin: 0;
-    font-size: 14px;
-  }
   .firstpage {
-    height: 1000px;
+    /* min-height: 1000px; */
     width: 100%;
-  }
-  .header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-image: url("../img/headersmall.svg");
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: calc(100% - -125px);
-    background-position-y: -10px;
-    padding: 0;
   }
   .chooseUs {
     background-image: none;
@@ -515,7 +490,7 @@ h5 span {
     font-size: 14px;
   }
   .h-101 {
-    height: 54% !important;
+    height: 72% !important;
   }
   .sponsr {
     justify-content: center !important;
@@ -528,6 +503,10 @@ h5 span {
   left: 1px;
 }
 @media (max-width: 576px) {
+  .firstpage {
+    height: 55vh;
+    width: 100%;
+  }
   h3.custom {
     font-size: 1.5rem;
   }
@@ -544,23 +523,10 @@ h5 span {
     font-size: 10px;
   }
   .firstpage {
-    height: 500px;
+    min-height: 500px;
     width: 100%;
   }
-  .header {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    background-image: url(../img/headersmall.svg);
-    background-position-x: 144%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: calc(100% - -100px);
-    background-position-y: -30px !important;
-  }
-  .header {
-    background-position-y: 13px;
-  }
+
   .navig button.custom,
   button.custom {
     color: #ffffff;
@@ -654,5 +620,50 @@ h5 span {
   }
   .sponsor {
     min-width: 100px;
+  }
+}
+@media (max-width: 468px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(../img/headersmall.svg);
+    background-position-x: 144%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% - -100px);
+    background-position-y: -30px !important;
+  }
+  .header {
+    background-position-y: 13px;
+  }
+  .firstpage {
+    height: 69vh;
+    width: 100%;
+  }
+  .navig h5.custom,
+  .navig h1.custom {
+    color: #ffffff;
+    margin: 0;
+  }
+  .hid {
+    display: none;
+  }
+  .navig h4.custom {
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 468px) {
+  .firstpage {
+    height: 63vh;
+    width: 100%;
+  }
+}
+@media (max-width: 470px) and (min-width: 418px) {
+  .firstpage {
+    height: 70vh;
+    width: 100%;
   }
 }
