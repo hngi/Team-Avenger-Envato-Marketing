@@ -19,14 +19,14 @@ body {
 }
 .navbar {
   transition: 500ms ease;
-  background: transparent;
+  background: white;
 }
 .navbar.scrolled {
   background: #fafafc;
 }
 .nav-link,
 .navbar-brand {
-  color: #021853;
+  color: #021853 !important;
   cursor: pointer;
 }
 .nav-link {
@@ -42,7 +42,15 @@ body {
 }
 .nav-link:hover,
 .navbar-brand span {
-  color: #f2c94c;
+  color: #ff5c01;
+}
+.navbar-brand span {
+  position: absolute;
+  top: -36px;
+  left: 1px;
+}
+.navbar-brand spanr {
+  position: relative;
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -56,7 +64,7 @@ body {
   border-color: rgb(255, 102, 203);
 }
 section:nth-of-type(1) {
-  height: 100vh;
+  height: calc(100vh - 3rem);
   width: 100%;
 }
 .header {
@@ -81,7 +89,7 @@ section:nth-of-type(1) {
   font-family: "Roboto", sans-serif;
   /* font-weight: 500; */
 
-  color: rgba(2, 24, 83, 0.6);
+  /* color: rgba(2, 24, 83, 0.6); */
 }
 .header button {
   height: 55px;
@@ -112,6 +120,12 @@ section:nth-of-type(1) {
   font-family: "Roboto", sans-serif;
   color: #ff5c01;
 }
+.small-strat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
 .bg-orange {
   background: #ff5c01;
 }
@@ -137,10 +151,15 @@ section:nth-of-type(1) {
 }
 .big-blue {
   font-family: "Montserrat", sans-serif;
-  /* font-size: 2.1rem; */
   font-style: normal;
   color: #021853;
   font-weight: bold;
+}
+.bigg-blue {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #021853;
 }
 .bg-blue {
   background: #021853;
@@ -156,7 +175,52 @@ section:nth-of-type(1) {
   background-position: center;
   position: relative;
   padding-top: 95px;
+
+  width: 363px;
+  height: 272px;
+  margin: 10px 15px;
 }
+@media (max-width: 991px) {
+  .servicesCol {
+    width: 316px;
+    height: 272px;
+    margin: 10px 7px;
+  }
+}
+@media (max-width: 770px) {
+  .servicesCol {
+    width: 363px;
+    height: 272px;
+    margin: 10px 7px;
+  }
+}
+.sponsor {
+  min-width: 125px;
+}
+.expandBiz {
+  min-width: 435px;
+}
+@media (max-width: 440px) {
+  .expandBiz {
+    min-width: 200px;
+  }
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .row.align-items-center.h-100 {
+    height: 70% !important;
+  }
+}
+.hideMobile {
+  display: block;
+}
+@media (max-width: 800px) {
+  .hideMobile {
+    display: none !important;
+  }
+}
+
 .servicesList h1 {
   font-weight: 600;
   font-size: 1.26rem;
@@ -196,10 +260,10 @@ section:nth-of-type(1) {
 .servicesList {
   /* padding-bottom: 115px; */
 }
-.servicesCol:nth-child(1),
+/* .servicesCol:nth-child(1),
 .servicesCol:nth-child(2) {
   margin-right: 3.5rem !important;
-}
+} */
 .chooseUs {
   background: #021853;
 }
@@ -221,11 +285,10 @@ section:nth-of-type(1) {
 .reviewss .carousel-indicators li {
   width: 15px;
   height: 15px;
-  border: 4px solid #c4c4c4;
+  border: 2.5px solid #c4c4c4;
   border-radius: 50%;
   background: #ffffff;
   opacity: 1;
-  border: 0;
 }
 .reviewss {
   /* background: url("/img/footr.png"); */
@@ -320,4 +383,81 @@ section:nth-of-type(1) {
 }
 .f-12 {
   font-size: 10px !important;
+}
+.followus img {
+  cursor: pointer;
+}
+.followus img:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .navig h4.custom,
+  .navig h1.custom {
+    color: #ffffff;
+  }
+  section:nth-of-type(1) {
+    height: 890px;
+    width: 100%;
+  }
+  .header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("../img/headersmall.svg");
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% - -125px);
+    background-position-y: -10px;
+    padding: 0;
+  }
+  .reviewss .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+  }
+  .carousel-caption h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  h3.custom {
+    font-size: 1.5rem;
+  }
+  h1.custom {
+    font-size: 1.15rem;
+  }
+  h4.custom {
+    font-size: 1rem;
+  }
+  h5.custom {
+    font-size: 11px;
+  }
+  a.custom {
+    font-size: 10px;
+  }
+  section:nth-of-type(1) {
+    height: 590px;
+    width: 100%;
+  }
+  .header {
+    background-position-y: 13px;
+  }
+  .navig button.custom {
+    color: #ffffff;
+    font-size: 12px;
+    width: 85px;
+    height: 37px;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .navbar-brand span {
+    position: absolute;
+    top: -25px;
+    font-size: 26px;
+    left: 00px;
+  }
 }
