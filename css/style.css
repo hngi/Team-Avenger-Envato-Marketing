@@ -29,6 +29,9 @@ body {
   color: #021853 !important;
   cursor: pointer;
 }
+.nav-link:hover {
+  color: #f46311 !important;
+}
 .nav-link {
   margin-right: 1em !important;
 }
@@ -43,6 +46,9 @@ body {
 .nav-link:hover,
 .navbar-brand span {
   color: #ff5c01;
+}
+.navbar-nav .active > .nav-link {
+  color: #ff5c01 !important;
 }
 .navbar-brand span {
   position: absolute;
@@ -63,12 +69,12 @@ body {
   color: red;
   border-color: rgb(255, 102, 203);
 }
-section:nth-of-type(1) {
+.firstpage {
   height: calc(100vh - 3rem);
   width: 100%;
 }
 .header {
-  background: #ffffff;
+  background: transparent;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -390,13 +396,53 @@ section:nth-of-type(1) {
 .followus img:hover {
   transform: translateY(-2px);
 }
-
+.firstpage {
+  position: relative;
+  z-index: 2;
+  background: url("../img/bg1.png");
+  /* background: url(/img/bg1.png), url(/img/bg2.png); */
+  background-position: bottom left;
+  /* background-position: bottom left, center right; */
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 70px top 98px;
+  /* background-position: left 20px bottom 45px, right 45px bottom 20px; */
+}
+.img1 {
+  position: relative;
+  z-index: 2;
+  background: url("../img/beSect2.png"), url("../img/bg1.png");
+  background-position: bottom left, center right;
+  background-size: 473px 668.36px, 40px;
+  background-repeat: no-repeat, no-repeat;
+  /* background-position: left 70px top 98px; */
+  background-position: left 0 bottom 12%, left 31% bottom 39%;
+}
+.chooseUs {
+  position: relative;
+  z-index: 2;
+  background-image: url("../img/leftbgBlue.png"), url("../img/rightbgBlue.png");
+  background-position: bottom left, center right;
+  background-size: auto 100%, auto;
+  background-repeat: no-repeat, no-repeat;
+  /* background-position: left 70px top 98px; */
+  background-position: left 0 top 162px, right 0 bottom 52px;
+}
+.firstpage :before {
+  content: "";
+  position: absolute;
+  z-index: -1; /* push it to the background */
+  /* top: 12px; position it off the top background */
+  right: 0;
+  bottom: 20px; /* position it off the bottom background */
+  left: 0;
+  /* background: url(/img/bg1.png) top left repeat-y; */
+}
 @media (max-width: 768px) {
   .navig h4.custom,
   .navig h1.custom {
     color: #ffffff;
   }
-  section:nth-of-type(1) {
+  .firstpage {
     height: 890px;
     width: 100%;
   }
@@ -438,9 +484,20 @@ section:nth-of-type(1) {
   a.custom {
     font-size: 10px;
   }
-  section:nth-of-type(1) {
-    height: 590px;
+  .firstpage {
+    height: 700px;
     width: 100%;
+  }
+  .header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url(../img/headersmall.svg);
+    background-position-x: 144%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% - -100px);
+    background-position-y: -30px !important;
   }
   .header {
     background-position-y: 13px;

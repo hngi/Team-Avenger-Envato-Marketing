@@ -20,4 +20,15 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+};
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myNav");
+var nav = header.getElementsByClassName("nav-item");
+for (var i = 0; i < nav.length; i++) {
+    nav[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }
