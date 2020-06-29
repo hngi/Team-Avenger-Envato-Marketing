@@ -1,0 +1,162 @@
+.two{
+    background-color: rgb(47, 47, 226);
+}
+.two_1{
+    text-align: center;
+    color: white;
+}
+.car{
+    /*background-color: rgb(47, 47, 226);*/
+    text-align: center;
+    color: white;
+}
+.four{
+    background-color: rgb(47, 47, 226);
+    text-align: center;
+}
+.qus{
+    color:white;
+}
+.buttonIn { 
+    width: 300px; 
+    position: relative; 
+} 
+#enter{ 
+    margin: 0px; 
+    padding: 0px; 
+    width: 100%; 
+    outline: none; 
+    height: 40px; 
+    border-radius: 5px; 
+} 
+#clear{ 
+    position: absolute; 
+    top: 0; 
+    border-radius: 5px; 
+    right: 6px; 
+    z-index: 2; 
+    border: none; 
+    top: 4px; 
+    height: 30px; 
+    cursor: pointer; 
+    color: white; 
+    background-color: blue; 
+    transform: translateX(2px); 
+}
+.five ul{
+    list-style: none;
+    color: black;
+}
+@media (max-width: 768px){
+    .large{
+        display: none;
+    }
+    .intro{
+        text-align: center;
+    }
+    .forUnder1{
+        position: absolute;
+        top: 25px;
+        right: 85px;
+    }
+    .forUnder2{
+        position: absolute;
+        bottom: 25px;
+        left: 85px;
+    }
+    .two_2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .butt{
+        padding-left: 40px;
+    }
+    .three{
+        text-align: center;
+    }
+    
+    .mobile4{
+        position: absolute;
+        left: 45px;
+    }
+    .quote{
+        z-index: 1;
+        right: 100px;
+        top: 40px;
+    }
+    .block_quote{
+        width: 200px;
+        border-color: black;
+        border-radius: 5px;
+        position: absolute;
+        background-color: white;
+        top: 200px;
+        right: 50px;
+        padding: 5px;
+        z-index: 1;
+        text-align: left;
+        font-size: 9px;
+    }
+    .love_bg{
+        position: absolute;
+        left: 200px;
+        top: 250px;
+        z-index: 2;
+        size: 10px;
+    }
+    .love{
+        position: absolute;
+        left: 220px;
+        bottom: 0px;
+        z-index: 3;
+    }
+}
+@media (min-width: 769px){
+    .small{
+        display: none;
+    }
+    .forUnder1{
+        position: absolute;
+        bottom: 75px;
+        right: 55px;
+    }
+    .forUnder2{
+        position: absolute;
+        bottom: 75px;
+        left: 85px;
+    }
+    .two_2{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+    }
+    .test{
+        left: 150px;
+        top: 50px;
+    }
+    .quote{
+        z-index: 1;
+    }
+    .block_quote{
+        width: 400px;
+        border-color: black;
+        border-radius: 10px;
+        position: absolute;
+        background-color: white;
+        top: 230px;
+        right: 300px;
+        padding: 5px;
+        z-index: 1;
+    }
+    .love_bg{
+        position: absolute;
+        left: 120px;
+        top: 330px;
+        z-index: 2;
+    }
+    .love{
+        position: absolute;
+        left: 140px;
+        bottom: 80px;
+        z-index: 3;
+    }
+}
