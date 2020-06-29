@@ -1,0 +1,430 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.custom-h1 {
+  font-family: Righteous;
+  font-weight: normal;
+  font-size: 65px;
+  color: #3A3A3A;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.custom-h2 {
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  color: #3A3A3A;
+}
+
+.border-none {
+  border: none;
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.order-2 {
+  order: 0;
+}
+
+/* CONTAINERS */
+.container-fluid {
+  padding: 0;
+}
+.brown-container {
+  background: #F4E7E5;
+  padding: 40px;
+}
+.white-container {
+  padding: 40px;
+}
+
+.row, .col-md {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* JUMBOTRON */
+.jumbotron {
+  background: none;
+  padding-left: 10%;
+  padding-top: 0;
+}
+
+.lead {
+  width: 80%;
+  margin: 30px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 140.62%;
+  color: #000000;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+  background: white !important;
+}
+
+.navbar button{
+  outline: none;
+  border: none;
+}
+
+.nav-link:hover {
+  opacity: .7;
+}
+
+.navbar {
+  padding: 30px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: white;
+  opacity: none;
+}
+
+.nav-item .active {
+  opacity: .5 !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #8F6A73 !important;
+  opacity: none !important;
+  margin: 0 20px;
+}
+
+/* CUSTOM BUTTON */
+
+.btn {
+  font-family: Righteous;
+  color: white;
+  background: #8F6A73;
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.11) !important;
+}
+
+.btn:active {
+  outline: none !important;
+  border: none !important;
+}
+
+.btn-lg {
+  font-size: 36px;
+  color: #F9F9F9;
+}
+
+
+/* CUSTOM CARDS */
+
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-text {
+  text-align: center;
+}
+
+.btn-small {
+  font-size: 25px;
+}
+
+.card-body {
+  padding: 10px 40px;
+  text-align: center;
+}
+.card-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.percentage-tag {
+  position: absolute;
+  top: 30px;
+  padding: 10px 15px;
+  color: white;
+  background: #8F6A73;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* CUSTOM CAROUSEL */
+
+.mobile-carousel {
+  display: none;
+}
+
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2.5px solid #8F6A73;
+}
+
+.carousel-indicators .active {
+  background-color: #8F6A73;
+}
+
+/* FREE SHIPPING */
+.free-shipping {
+  text-align: right;
+}
+
+.free-shipping-h2 {
+  text-align: right;
+}
+
+.free-shipping-h3 {
+  font-size: 45px;
+  line-height: 140.62%;
+}
+
+.free-shipping-text {
+  font-size: 25px;
+  line-height: 140.62%;
+  color: #000000;
+}
+
+/* FRIDAY DEALS */
+
+.lg-card {
+  padding: 0 70px;
+}
+
+.lg-card-description {
+  font-size: 20px;
+  line-height: 140.62%;
+}
+
+.first-lg-card {
+  text-align: left;
+}
+.second-lg-card {
+  text-align: right;
+}
+
+.slash-price {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 64px;
+  color: #3A3A3A;
+}
+
+.strike-through {
+  color: rgba(58, 58, 58, 0.5);
+  text-decoration: line-through;
+}
+
+/* CUSTOM FOOTER */
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  background: #8F6A73;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer li {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.social:hover {
+  opacity: 0.7;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .custom-h1 {
+    font-size: 55px;
+  }
+  .custom-h2 {
+    font-size: 36px;
+  }
+  .lead {
+    font-size: 20px;
+  }
+  .btn-lg {
+    font-size: 20px;
+  }
+  .btn-small {
+    font-size: 20px;
+  }
+  .nav-link {
+    margin: 0 10px;
+  }
+  .jumbotron {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .free-shipping-text {
+    font-size: 20px;
+  }
+  .free-shipping-h3 {
+    font-size: 35px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-body {
+    padding: 10px 20px;
+  }
+  .percentage-tag {
+    font-size: 20px;
+  }
+  .slash-price {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-2 {
+    order: 2;
+  }
+  .jumbotron {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .lead {
+    width: 100%;
+    text-align: center;
+  }
+  .custom-h1 {
+    font-size: 33px;
+  }
+  .custom-h2 {
+    font-size: 33.7009px;
+  }
+  .card-title {
+    font-size: 19.2049px;
+  }
+  .card-body {
+    font-size: 15.3639px;
+  }
+  .btn-small {
+    font-size: 19.2049px;
+  }
+  .top-row {
+    padding: 0 20px;
+  }
+  .btn-lg {
+    font-size: 21.6649px;
+  }
+  .brown-container {
+    padding: 40px 20px;
+  }
+  .percentage-tag {
+    font-size: 19.2049px;
+  }
+  .free-shipping-h2 {
+    font-size: 27px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .free-shipping-h3 {
+    font-size: 29.417px;
+    line-height: 140.62%;
+  }
+  .free-shipping-text {
+    font-size: 16.3428px;
+    line-height: 140.62%;
+  }
+  .lg-card {
+    padding: 0;
+  }
+  .first-lg-card, .second-lg-card {
+    text-align: center;
+  }
+  .slash-price {
+    font-size: 29.3272px;
+  }
+  .web-carousel {
+    display: none;
+  }
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .footer li {
+    margin: 10px;
+  }
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  .footer-top {
+    justify-content: space-around;
+  }
+  .footer-middle {
+    text-align: center;
+    margin: 0;
+  }
+  .mobile-carousel {
+    display: block;
+  }
+
+  #carousel-3 {
+    margin-top: 40px;
+  }
+
+}
