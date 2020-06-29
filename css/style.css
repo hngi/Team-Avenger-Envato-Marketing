@@ -1,5 +1,5 @@
 .two{
-    background-color: rgb(47, 47, 226);
+    background-color: #4057F3;
 }
 .two_1{
     text-align: center;
@@ -11,12 +11,13 @@
     color: white;
 }
 .four{
-    background-color: rgb(47, 47, 226);
-    text-align: center;
+    background-color: #4057F3;
 }
-.qus{
-    color:white;
+.five ul{
+    list-style: none;
+    color: black;
 }
+
 .buttonIn { 
     width: 300px; 
     position: relative; 
@@ -26,43 +27,30 @@
     padding: 0px; 
     width: 100%; 
     outline: none; 
-    height: 40px; 
+    height: 30px; 
     border-radius: 5px; 
 } 
 #clear{ 
     position: absolute; 
     top: 0; 
     border-radius: 5px; 
-    right: 6px; 
+    right: 0px; 
     z-index: 2; 
     border: none; 
-    top: 4px; 
+    top: 2px; 
     height: 30px; 
     cursor: pointer; 
     color: white; 
-    background-color: blue; 
+    background-color: #4057F3; 
     transform: translateX(2px); 
 }
-.five ul{
-    list-style: none;
-    color: black;
-}
+
 @media (max-width: 768px){
     .large{
         display: none;
     }
     .intro{
         text-align: center;
-    }
-    .forUnder1{
-        position: absolute;
-        top: 25px;
-        right: 85px;
-    }
-    .forUnder2{
-        position: absolute;
-        bottom: 25px;
-        left: 85px;
     }
     .two_2{
         display: grid;
@@ -110,6 +98,10 @@
         bottom: 0px;
         z-index: 3;
     }
+    .qus{
+        color:white;
+        text-align: center;
+    }
 }
 @media (min-width: 769px){
     .small{
@@ -117,13 +109,15 @@
     }
     .forUnder1{
         position: absolute;
-        bottom: 75px;
-        right: 55px;
+        top: 75px;
+        left: 55px;
+        z-index: -1;
     }
     .forUnder2{
         position: absolute;
-        bottom: 75px;
-        left: 85px;
+        top: 75px;
+        right: 15px;
+        z-index: -1;
     }
     .two_2{
         display: grid;
@@ -134,7 +128,10 @@
         top: 50px;
     }
     .quote{
+        position: absolute;
         z-index: 1;
+        top: 200px;
+        left:0px;
     }
     .block_quote{
         width: 400px;
@@ -158,5 +155,9 @@
         left: 140px;
         bottom: 80px;
         z-index: 3;
+    }
+    .qus{
+        color:white;
+        text-align: left;
     }
 }
