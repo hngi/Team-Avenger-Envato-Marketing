@@ -2,6 +2,10 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif; */
 
+html {
+  scroll-behavior: smooth;
+}
+
 #idea {
   font-family: 'Open Sans', sans-serif;
   background: white;
@@ -46,16 +50,39 @@ font-family: 'Work Sans', sans-serif; */
   line-height: 4rem;
   letter-spacing: 2px;
 }
-
+.spy {
+  position: relative;
+}
 .dark {
   color: #000000;
   font-size: 18px;
   line-height: 25px
 }
 
+.dark:hover {
+  color: #4200FF;
+}
+
+.navbar .active {
+  color: #4200FF;
+}
+
 .brand {
   font-weight: bold;
   font-size: 24px;
+  color: #000000;
+}
+
+.brand:hover {
+  color: #000000;
+}
+
+.brand:focus {
+  color: #000000;
+}
+
+.brand:active {
+  color: #000000;
 }
 
 .colored {
@@ -77,8 +104,23 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 .button:hover {
-  background: #4200FF;
-  color: white;
+  background: white;
+  color: #4200ff;
+  border: 1px solid #4200ff;
+}
+
+.button:active {
+  background: white;
+  color: #4200ff;
+  border: 1px solid #4200ff;
+}
+
+.button:focus {
+  background: white;
+  color: #4200ff;
+  outline: none;
+  border: 1px solid #4200ff;
+  box-shadow: none;
 }
 
 .services {
