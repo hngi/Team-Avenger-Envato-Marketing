@@ -11,12 +11,12 @@
   <script src="https://kit.fontawesome.com/f10963947a.js"></script>
   <title>SLEEK</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-to-spy" data-offset="90">
   <div class="container-fluid">
 
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar-to-spy" class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"><img src="./assets/images/SLEEK.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -35,25 +35,28 @@
             <a class="nav-link" href="#goodies">Goodies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#deals">Deals</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#shipping">Shipping</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#deals">Deals</a>
+          </li>
+          <li class="nav-item">
+            
             <a class="nav-link" href="#giveaways">Giveaways</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- HOME -->
-
+    <!-- SCROLL SPY -->
+    <div >
+      <!-- HOME -->
+    
     <div class="container-fluid" id="home">
       <div class="row top-row">
         <div class="col-md my-auto order-2">
           <div>
-            <div class="jumbotron">
+            <div class="jumbotron fade-in">
               <h2 class="display-4 custom-h2">Promotion of the day</h2>
               <p class="lead">Get the outfit from sleek’s fashion house, your one stop fashion store. Everthing you need in a click of a button. We love our customers, that’s why we offer weekly discounts</p>
               <a class="btn btn-lg" href="#" role="button">Redeem your discount</a>
@@ -61,7 +64,7 @@
           </div>
         </div>
         <div class="col-md">
-          <img style="width: 100%;" src="./assets/images/top-img_nsakou (1).png" alt="">
+          <img class="fade-in" style="width: 100%;" src="./assets/images/top-img_nsakou (1).png" alt="">
         </div>
       </div>
     </div>
@@ -122,7 +125,7 @@
           <li data-target="#carousel-1" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active"> 
+          <div class="carousel-item active">
             <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -505,6 +508,8 @@
         </div>
       </div>
     </div>
+    </div>
+    
 
     <!-- FOOTER -->
     <footer>
@@ -540,7 +545,11 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
   <script>
-
+    window.sr = ScrollReveal();
+        sr.reveal('.brown-container', {
+          duration: 3000,
+          origin:'bottom'
+        });
     // SMOOTH SCROLLING LOGIC
 
     $(function() {
