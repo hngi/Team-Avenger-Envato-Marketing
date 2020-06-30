@@ -33,8 +33,13 @@ body {
   color: #021853 !important;
   cursor: pointer;
 }
-.nav-link:hover {
+.foot a {
+  color: #ffffff !important;
+}
+.nav-link:hover,
+.foot a:hover {
   color: #ff5a01d4 !important;
+  text-decoration: none;
 }
 .nav-link {
   margin-right: 1em !important;
@@ -589,7 +594,7 @@ h5 span {
   button.custom {
     color: #ffffff;
     font-size: 12px;
-    width: 85px;
+    width: auto;
     height: 37px;
   }
   button.custom {

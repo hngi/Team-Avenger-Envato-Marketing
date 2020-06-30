@@ -1,6 +1,11 @@
-ScrollReveal({ reset: true }).reveal('.img1');
-ScrollReveal().reveal('.servSection');
+ScrollReveal({ reset: true }).reveal('.home');
+ScrollReveal().reveal('.secondSect');
 ScrollReveal().reveal('.img2', { interval: 16, delay: 500 });
+ScrollReveal({ reset: true }).reveal('.col');
+ScrollReveal().reveal('.services');
+ScrollReveal().reveal('.chooseUs', { interval: 16, delay: 500 });
+ScrollReveal().reveal('.caro');
+ScrollReveal().reveal('.carosel');
 
 
 $(window).scroll(function () {
