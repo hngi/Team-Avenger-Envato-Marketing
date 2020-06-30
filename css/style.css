@@ -5,6 +5,10 @@ body {
   /* padding-top: 65px; */
   font-family: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -47,8 +51,11 @@ body {
 .navbar-brand span {
   color: #ff5a0194;
 }
-.navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .nav-link.active {
   color: #ff5a01 !important;
+}
+.nav-item.current {
+  background: black;
 }
 .navbar-brand span {
   position: absolute;
@@ -341,7 +348,6 @@ h5 span {
 }
 .reviewss .carousel-item {
   min-height: 500px;
-  /* background: #ececec; */
   color: #000;
   font-size: 24px;
 }
@@ -505,11 +511,24 @@ h5 span {
 .hid {
   display: block;
 }
-
+.servicesCol:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.16);
+  transform: translate(0, -10px);
+  transition-delay: 0s !important;
+}
 @media (max-width: 768px) {
   .firstpage {
     /* min-height: 1000px; */
     width: 100%;
+  }
+  .form-group {
+    display: inline-flex;
+  }
+  .button-small {
+    width: 71px;
+    height: 31px;
+    font-size: 10px;
+    line-height: 1;
   }
   .chooseUs {
     background-image: none;
@@ -721,4 +740,9 @@ h5 span {
   background-size: 29%;
   background-repeat: no-repeat;
   background-position: center 43%;
+}
+section:not(:first-child):before {
+  height: 24px;
+  content: "";
+  display: block;
 }
