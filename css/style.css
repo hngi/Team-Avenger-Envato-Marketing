@@ -22,7 +22,7 @@ html {
 .home {
   width:100% ;
   height: 100vh;
-  background: url(../assets/austin.jpg) no-repeat;
+  background: url(../assets/edited-header.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -32,7 +32,6 @@ html {
   color: white;
   font-family: 'Merriweather', serif
 }
-
 
 .splash {
   height: 100%;
@@ -50,9 +49,11 @@ html {
   line-height: 4rem;
   letter-spacing: 2px;
 }
+
 .spy {
   position: relative;
 }
+
 .dark {
   color: #000000;
   font-size: 18px;
