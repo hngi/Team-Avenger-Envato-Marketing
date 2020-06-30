@@ -30,7 +30,7 @@ body {
   cursor: pointer;
 }
 .nav-link:hover {
-  color: #f46311 !important;
+  color: #ff5a01d4 !important;
 }
 .nav-link {
   margin-right: 1em !important;
@@ -45,10 +45,10 @@ body {
 }
 .nav-link:hover,
 .navbar-brand span {
-  color: #ff5c01;
+  color: #ff5a0194;
 }
 .navbar-nav .active > .nav-link {
-  color: #ff5c01 !important;
+  color: #ff5a01 !important;
 }
 .navbar-brand span {
   position: absolute;
@@ -65,7 +65,7 @@ body {
   font-family: "Roboto", sans-serif;
   /* font-size: 1.5rem; */
 }
-.navbar-dark .navbar-toggler-icon {
+.navbar-custom .navbar-toggler-icon {
   color: red;
   border-color: rgb(255, 102, 203);
 }
@@ -397,8 +397,14 @@ h5 span {
   padding-left: 30px;
   padding-right: 30px;
 }
-.navbar-light .navbar-toggler-icon {
-  background-image: url(data:image/svg+xml,%3csvg xmlns=http://www.w3.org/2000/svg width=30 height=30 viewBox=0 0 30 30%3e%3cpath stroke=rgba%280, 0 0 0.5%29 stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=M4 7h22M4 15h22M4 23h22/%3e%3c/svg%3e);
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(2, 24, 83)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-light button:focus {
+  outline: 0.5px solid rgb(11, 54, 172) !important;
 }
 .carosel {
   background: url(/img/carosel.png);
@@ -532,7 +538,7 @@ h5 span {
 .dot {
   position: absolute;
   color: #ff5c01;
-  top: -30px;
+  top: -32px;
   left: 1px;
 }
 @media (max-width: 576px) {
@@ -654,6 +660,9 @@ h5 span {
   .sponsor {
     min-width: 100px;
   }
+  .email {
+    width: 47vw;
+  }
 }
 @media (max-width: 468px) {
   .header {
@@ -699,4 +708,17 @@ h5 span {
     height: 70vh;
     width: 100%;
   }
+}
+@media (max-width: 990px) and (min-width: 766px) {
+  .nav-item a {
+    font-size: 0.9rem;
+  }
+}
+.caro {
+  position: relative;
+  z-index: 2;
+  background-image: url("../img/centerweirdshape.png");
+  background-size: 29%;
+  background-repeat: no-repeat;
+  background-position: center 43%;
 }
