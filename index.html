@@ -9,13 +9,82 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Your Title Here</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TheCloset Marketing</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg nav-top">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.svg" alt=""></a>
 
+            <div class="d-sm-flex d-md-flex d-lg-none right-side-mobile">
+                <img src="./assets/search-icon.svg" alt="">
+                <span class="toggle-icon collapsed" type="button" data-toggle="collapse"
+                    data-target=".navbar-collapse-target" aria-controls="navbar-collapse-target" aria-expanded="false"
+                    aria-label="Toggle navigation">toggle</span>
+            </div>
+            <div class="d-none d-sm-none d-lg-flex">
+                <div class="search-box">
+                    <input type="search" class="form-control" placeholder="Search TheCloset"
+                        aria-label="Search TheCloset" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-collapse-target">
+                <div class="auth navbar-item">
+                    <img src="https://img.icons8.com/windows/96/000000/add-user-male--v1.png"
+                        class="d-none d-sm-none d-md-inline-block" />
+                    <span>
+                        Sign Up/Log In
+                    </span>
+                </div>
+                <div class="shopping-cart navbar-item">
+                    <img src="https://img.icons8.com/ios/100/000000/shopping-cart.png"
+                        class="d-none d-sm-none d-md-inline-block" />
+                    <span>
+                        Shopping Cart
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg menu">
+            <div class="collapse navbar-collapse navbar-collapse-target menu">
+                <div class="nav-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kids Apparels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Jewelry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid first-section">
+            The one with the image
+        </section>
+        <section>
+            <!-- Information -->
+        </section>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
