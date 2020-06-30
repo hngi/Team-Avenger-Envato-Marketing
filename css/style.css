@@ -267,7 +267,7 @@ a:hover {
   background: rgba(66, 0, 255, 0.03);
 }
 
-.img-fluid:hover {
+.image:hover {
     -webkit-animation-name: pulse;
     animation-name: pulse;
     -webkit-animation-duration: 1s;
