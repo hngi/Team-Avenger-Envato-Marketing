@@ -73,6 +73,12 @@
          }
       }
    }
+
+   .services {
+      &-body {
+         grid-template-columns: 1fr;
+      }
+   }
 }
 
 @media screen and (max-width: 700px) {
@@ -162,10 +168,17 @@
 @media screen and (max-width: 400px) {
    .about {
       &-revenues {
+         flex-direction: column;
+
          & > span {
+            width: 100%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            &:not(:last-child) {
+               margin-bottom: 15px;
+            }
 
             img {
                margin: auto;
@@ -184,20 +197,11 @@
       line-height: 40px;
    }
 }
-
-@media screen and (max-width: 400px) {
-   .about {
-      &-revenues {
-         flex-direction: column;
-
-         & > span {
-            width: 100%;
-         }
-
-         & > span {
-            &:not(:last-child) {
-               margin-bottom: 15px;
-            }
+@media screen and (max-width: 350px) {
+   .services {
+      &-body {
+         p {
+            width: 90%;
          }
       }
    }
