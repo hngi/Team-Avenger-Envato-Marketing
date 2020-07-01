@@ -12,6 +12,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>SalesBoost </title>
@@ -196,6 +201,69 @@
       </div>
     </div>
   </section>
+  <section class="testimonial px-5 py-4 text-center defaultBg" id="reviews">
+    <div class="services-heading">
+      <p class="paragraph-bold-blue">WHAT OUR CLIENTS SAY</p>
+      <h2 class="md-heading text-light">Testimonial</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="tesimonial-body text-light mt-5 px-3">
+      <div class="slider">
+        <div class="review__testimonial">
+          <div class="testimonial__text">
+            <p class="paragraph-bold">
+              Our marketing team was only trained for two weeks and the number of conversions they made after the
+              training was simply
+              unbelievable.
+            </p>
+          </div>
+          <figure class="testimonial__shape">
+            <img src="images/client.png" alt="Client" class="rounded-circle">
+            <span class="d-block testimonial__name">Mark Essie
+              <b class="d-block">
+                CEO of Hotels.ng
+              </b>
+            </span>
+          </figure>
+        </div>
+        <div class="review__testimonial">
+          <div class="testimonial__text">
+            <p class="paragraph-bold">
+              Our marketing team was only trained for two weeks and the number of conversions they made after the
+              training was simply
+              unbelievable.
+            </p>
+          </div>
+          <figure class="testimonial__shape">
+            <img src="images/client.png" alt="Client" class="rounded-circle">
+            <span class="d-block testimonial__name">Mark Essie
+              <b class="d-block">
+                CEO of Hotels.ng
+              </b>
+            </span>
+          </figure>
+        </div>
+        <div class="review__testimonial">
+          <div class="testimonial__text">
+            <p class="paragraph-bold">
+              Our marketing team was only trained for two weeks and the number of conversions they made after the
+              training was simply
+              unbelievable.
+            </p>
+          </div>
+          <figure class="testimonial__shape">
+            <img src="images/client.png" alt="Client" class="rounded-circle">
+            <span class="d-block testimonial__name">Mark Essie
+              <b class="d-block">
+                CEO of Hotels.ng
+              </b>
+            </span>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -207,6 +275,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        infinite: true,
+        dots: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+      });
+    });
+  </script>
 </body>
 
 </html>

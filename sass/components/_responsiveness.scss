@@ -103,6 +103,16 @@
 }
 
 @media screen and (max-width: 550px) {
+   .testimonial {
+      height: 100%;
+
+      p {
+         width: 99%;
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
    .navbar {
       padding-left: 10px;
       padding-right: 10px;

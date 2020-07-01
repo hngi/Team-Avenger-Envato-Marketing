@@ -263,6 +263,44 @@
   width: 130px;
 }
 
+.testimonial {
+  height: 477px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.testimonial-body {
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial p {
+  width: 500px;
+  margin: auto;
+}
+.testimonial img {
+  width: 104px;
+  height: 104px;
+  margin: 20px auto;
+}
+.testimonial figure span {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.testimonial figure span b {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.review__testimonial {
+  padding: 10px 15px;
+  border: 2px solid #9c9ab3;
+  border-radius: 50px;
+}
+
+.slick-current:focus {
+  outline: none;
+  border: 2px solid #9c9ab3;
+}
+
 @media screen and (max-width: 1207px) {
   .about-revenues > span span {
     font-size: 1.7rem;
@@ -335,6 +373,14 @@
   }
   .about-revenues > span span {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .testimonial {
+    height: 100%;
+  }
+  .testimonial p {
+    width: 99%;
   }
 }
 @media screen and (max-width: 550px) {
