@@ -74,16 +74,21 @@ body {
 .client-custom {
 	background-image: url('../images/Rectangle\ 2.png');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: auto;
-	width: 100%;
-
-	/* background-position: center; */
-	/* height: 100%; */
+	/* background-position: cover; */
+	background-size: 100% 100%;
+}
+.client-custom .numbers {
+	color: #f50057;
+	font-weight: 700;
+	font-size: 5rem;
 }
 /* Our services */
 .card-img-top {
 	width: 5rem;
+}
+
+.services-custom h2 {
+	color: #f50057;
 }
 /* Team */
 .our-team {
