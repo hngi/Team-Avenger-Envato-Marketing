@@ -1,0 +1,32 @@
+.navbar {
+   position: relative;
+   padding-left: 100px;
+   padding-right: 20px;
+
+   .nav-link {
+      position: relative;
+   }
+
+   &-toggler-icon {
+      font-size: 2rem;
+   }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+   color: white;
+}
+
+.active-nav {
+   position: relative;
+}
+
+.active-nav::after {
+   position: absolute;
+   content: "";
+   width: 50px;
+   bottom: 5px;
+   z-index: 10;
+   border-bottom: 1px solid #ffffff;
+   margin: auto;
+   margin-left: 3px;
+}

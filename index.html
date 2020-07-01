@@ -204,64 +204,106 @@
       </div>
     </div>
   </section>
-  <section class="testimonial px-5 py-4 text-center defaultBg" id="reviews">
+  <section class="testimonial px-5 py-5 text-center defaultBg" id="reviews">
     <div class="services-heading">
       <p class="paragraph-bold-blue">WHAT OUR CLIENTS SAY</p>
       <h2 class="md-heading text-light">Testimonial</h2>
       <hr class="border-bottom">
     </div>
     <div class="tesimonial-body text-light mt-5 px-3">
-      <div class="slider">
-        <div class="review__testimonial">
-          <div class="testimonial__text">
-            <p class="paragraph-bold">
-              Our marketing team was only trained for two weeks and the number of conversions they made after the
-              training was simply
-              unbelievable.
-            </p>
+      <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
           </div>
-          <figure class="testimonial__shape">
-            <img src="images/client.png" alt="Client" class="rounded-circle">
-            <span class="d-block testimonial__name">Mark Essie
-              <b class="d-block">
-                CEO of Hotels.ng
-              </b>
-            </span>
-          </figure>
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="review__testimonial">
-          <div class="testimonial__text">
-            <p class="paragraph-bold">
-              Our marketing team was only trained for two weeks and the number of conversions they made after the
-              training was simply
-              unbelievable.
-            </p>
-          </div>
-          <figure class="testimonial__shape">
-            <img src="images/client.png" alt="Client" class="rounded-circle">
-            <span class="d-block testimonial__name">Mark Essie
-              <b class="d-block">
-                CEO of Hotels.ng
-              </b>
-            </span>
-          </figure>
-        </div>
-        <div class="review__testimonial">
-          <div class="testimonial__text">
-            <p class="paragraph-bold">
-              Our marketing team was only trained for two weeks and the number of conversions they made after the
-              training was simply
-              unbelievable.
-            </p>
-          </div>
-          <figure class="testimonial__shape">
-            <img src="images/client.png" alt="Client" class="rounded-circle">
-            <span class="d-block testimonial__name">Mark Essie
-              <b class="d-block">
-                CEO of Hotels.ng
-              </b>
-            </span>
-          </figure>
+        <div class="prev-next">
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span aria-hidden="true"> &larr;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span aria-hidden="true"> &rarr; </span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
@@ -419,17 +461,7 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.slider').slick({
-        infinite: true,
-        dots: true,
-        slideToShow: 1,
-        slideToScroll: 1,
-      });
-    });
-  </script>
+  <script src="js/carousel.js"></script>
 </body>
 
 </html>

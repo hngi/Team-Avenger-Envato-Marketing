@@ -1,0 +1,340 @@
+@media screen and (max-width: 1207px) {
+   .about {
+      &-revenues {
+         & > span {
+            span {
+               font-size: 1.7rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1060px) {
+   .footer {
+      grid-template-columns: 1fr 1fr;
+
+      &-subscribe {
+         text-align: center;
+         grid-column: 1 / -1;
+         grid-row: 2;
+         margin-top: 20px;
+         width: 100%;
+         input {
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1070px) {
+   .about {
+      flex-direction: column;
+      width: 99%;
+      height: 100%;
+      background-color: white;
+      margin-top: 40px;
+
+      &-img {
+         width: 600px;
+         margin: auto;
+         margin-bottom: 20px;
+
+         img {
+            position: static;
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+
+      &-text {
+         width: 600px;
+         margin: auto;
+         padding-left: 0;
+         text-align: center;
+         position: static;
+      }
+
+      &-revenues {
+         & > span {
+            justify-content: center;
+            span {
+               font-size: 2.2rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1030px) {
+   .hero {
+      &-body {
+         width: 99%;
+
+         h1 {
+            font-size: 7rem;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .contact {
+      &-body {
+         flex-direction: column;
+         height: 100%;
+
+         form input {
+            height: 50px;
+            width: 100%;
+         }
+
+         .send-message {
+            width: 100%;
+         }
+
+         .middle {
+            width: 100%;
+            position: relative;
+            top: 0;
+            margin-top: 40px;
+            margin-bottom: 40px;
+         }
+
+         .appointment {
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 830px) {
+   .footer {
+      grid-template-columns: 1fr;
+
+      address {
+         text-align: center;
+         ul {
+            li {
+               justify-content: center;
+               margin-right: auto;
+               margin-left: auto;
+            }
+         }
+      }
+
+      &-social {
+         width: 250px;
+         margin-right: auto;
+         margin-left: auto;
+
+         li {
+            justify-content: center;
+         }
+      }
+
+      &-links {
+         margin-top: 10px;
+      }
+
+      &-subscribe {
+         grid-row: 3;
+      }
+   }
+}
+
+@media screen and (max-width: 880px) {
+   .approach {
+      height: 100%;
+
+      &-body {
+         flex-direction: column;
+
+         div:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+   }
+
+   .services {
+      &-body {
+         grid-template-columns: 1fr;
+      }
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .about {
+      &-img {
+         width: 99%;
+      }
+
+      &-text {
+         width: 99%;
+      }
+
+      &-revenues {
+         & > span {
+            width: 33%;
+            span {
+               font-size: 2rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .navbar {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .hero {
+      &-body {
+         width: 99%;
+         text-align: center;
+
+         h1 {
+            font-size: 4rem;
+            padding-left: 10px;
+         }
+
+         p {
+            width: 99%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+         }
+
+         button {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+   }
+
+   .testimonial {
+      height: 100%;
+
+      p {
+         width: 99%;
+      }
+   }
+
+   .paragraph-bold {
+      font-size: 1.4rem;
+   }
+
+   .paragraph-bold-blue {
+      font-size: 1.2rem;
+   }
+
+   .default-btn {
+      font-size: 1.4rem;
+      height: 60px;
+   }
+
+   .about {
+      &-revenues {
+         & > span {
+            width: 200px;
+            align-items: flex-end;
+
+            img {
+               width: 35px;
+               height: 35px;
+            }
+
+            span {
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 485px) {
+   .go-up {
+      bottom: 200px;
+   }
+
+   .footer {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      li {
+         font-size: 1.6rem;
+      }
+
+      &-social {
+         width: 99%;
+      }
+
+      &-links {
+         ul {
+            &:not(:last-child) {
+               padding-left: 0;
+            }
+
+            a {
+               font-size: 1.8rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .about {
+      &-revenues {
+         flex-direction: column;
+
+         & > span {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:last-child) {
+               margin-bottom: 15px;
+            }
+
+            img {
+               margin: auto;
+               margin-bottom: 10px;
+            }
+
+            span {
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+
+   .md-heading {
+      font-size: 4rem;
+      line-height: 40px;
+   }
+}
+@media screen and (max-width: 350px) {
+   .logo {
+      width: 130.07px;
+      object-fit: contain;
+   }
+
+   .services {
+      &-body {
+         p {
+            width: 90%;
+         }
+      }
+   }
+
+   .brands {
+      img {
+         width: 100px;
+      }
+   }
+}
