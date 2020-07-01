@@ -224,6 +224,45 @@
   display: inline-block;
 }
 
+.brands-body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brands-body .group-1,
+.brands-body .group-2,
+.brands-body .group-3 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.brands-body .group-1 img,
+.brands-body .group-2 img,
+.brands-body .group-3 img {
+  display: inline-block;
+  width: 180px;
+}
+.brands-body .group-1 img[alt="Hotels.ng Logo"],
+.brands-body .group-2 img[alt="Hotels.ng Logo"],
+.brands-body .group-3 img[alt="Hotels.ng Logo"] {
+  width: 130px;
+}
+.brands-body img {
+  padding: 20px 0;
+}
+.brands-body .group-4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.brands-body .group-4 img {
+  display: inline-block;
+  width: 130px;
+}
+
 @media screen and (max-width: 1207px) {
   .about-revenues > span span {
     font-size: 1.7rem;
@@ -376,8 +415,17 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .navbar img {
+    width: 130.07px;
+    object-fit: contain;
+  }
+
   .services-body p {
     width: 90%;
+  }
+
+  .brands img {
+    width: 100px;
   }
 }
 *,

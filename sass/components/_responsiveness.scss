@@ -198,11 +198,23 @@
    }
 }
 @media screen and (max-width: 350px) {
+   .navbar {
+      img {
+         width: 130.07px;
+         object-fit: contain;
+      }
+   }
    .services {
       &-body {
          p {
             width: 90%;
          }
+      }
+   }
+
+   .brands {
+      img {
+         width: 100px;
       }
    }
 }
