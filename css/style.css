@@ -19,8 +19,8 @@
 }
 
 .buttonIn { 
-    width: 300px; 
-    position: relative; 
+    /*width: 300px; 
+    position: relative; */
 } 
 #enter{ 
     margin: 0px; 
@@ -31,12 +31,12 @@
     border-radius: 5px; 
 } 
 #clear{ 
-    position: absolute; 
+    position: absolute;
     border-radius: 5px; 
-    right: 5px; 
+    right: 54px; 
     z-index: 2; 
     border: none; 
-    top: 5px; 
+    top: 53px; 
     height: 40px; 
     cursor: pointer; 
     color: white; 
