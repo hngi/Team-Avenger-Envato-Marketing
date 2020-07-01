@@ -1,32 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Your Title Here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <h1>Hello, world!</h1>
+    <!--Brand/logo-->
+    <nav class="navbar navbar-expand-md bg-light navbar-light text-dark" style="height:80px;box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo (1).png" alt="logo" style="widows:auto; height:120px;margin-left:40px;margin-top:10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!--Navbar Links-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <button type="button" class="btn" style="background-color:#FF4F5A">Contact Us</button>
+    
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <!--Header-->
+    <div class="header_content container-fluid">
+        <div class="row">
+            <div class="text1 col-sm-5 offset-lg-1">
+                <p class="text-sm-left"><strong>We create<br>content that<br>ranks </strong></p>
+                <button type="button" class="btn">SEE OUR WORK</button>
+            </div>
+            <div class="img1 col-sm-6">
+                <img class="w-100" src="./images/3372240 1.png" alt="first image" style="max-width:100%;margin-top:70px;">
+                
+            </div>
+        </div>
+
+        <!--Oval shape-->
+        <div class="oval d-none d-sm-none"></div>
+        <!--About Us-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="aboutus text-center">About Us</h1>
+                <p class="textsub1 text-center text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+            <div class="col-sm-12">
+                <h1 class="aboutus text-center">Our Valuable Services</h1>
+            </div>
+
+        </div>
+        <!--Three Column Grid-->
+        <div class="container">
+            <div class="row grid_row">
+                <div class="col-sm-3" style="background-color: #FDF8E3; margin-right: 10px;margin-top: 20px;">
+                    <div class="topimg">
+                        <img src="./images/Bitmap.png" alt="Bitmap" style="max-width: 100%;">
+                    </div>
+                    <div>
+                        <h1 class="gridtext text-center">App Development</h1>
+                        <p class="textsub1 text-center text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button type="button" class="btn">SEE MORE</button>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-3" style="background-color: #F0F3FA; margin-right: 10px; margin-top: 20px;">
+                    <div class="topimg">
+                        <img src="./images/Bitmap-2.png" alt="Bitmap" style="max-width: 100%;">
+                    </div>
+                    <div>
+                        <h1 class="gridtext text-center">Web Development</h1>
+                        <p class="textsub1 text-center text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button type="button" class="btn">SEE MORE</button>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-3" style="background-color: #FEEFF0; margin-right: 10px; margin-top: 20px;">
+                    <div class="topimg">
+                        <img src="./images/Bitmap-1.png" alt="Bitmap" style="max-width: 100%;">
+                    </div>
+                    <div>
+                        <h1 class="gridtext text-center">UI/UX</h1>
+                        <p class="textsub1 text-center text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button type="button" class="btn">SEE MORE</button>
+                    </div>
+                    
+                </div>
+                <div clas="col-sm-3 d-none d-sm-none">
+                    <i class="fa fa-chevron-circle-right" style="font-size: 60px;color: #FF4F5A;margin-top: 185px;"></i>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <!--Main-->
+    <div class="main container-fluid" style="background-color: #020E35;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="maintext text-center" >Our Work</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="img-fluid" src="./images/Bitmap-3.png" alt="Bitmap" style="max-width: 100%">
+            </div>
+            <div class="col-sm-6" style="color:#ffffff;">
+                <h1 class="text-sm-left">Brand Name</h1>
+                <p class="text-sm-left" style="line-height: 70px;">iOS | ANDROID | WEB DEVELOPMENT</p>
+                <p class="text-sm-left" style="line-height: 20px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-sm-6 order__second" style="color:#ffffff; margin-top: 40px;">
+                <h1 class="text-sm-right">Brand Name</h1>
+                <p class="text-sm-right" style="line-height: 70px;">iOS | ANDROID | WEB DEVELOPMENT</p>
+                <p class="text-sm-right" style="line-height: 20px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-sm-6 order__first" style="margin-top: 40px;">
+                <img class="img-fluid" src="./images/Bitmap Copy.png" alt="Bitmap" style="max-width: 100%">
+            </div>
+            <div class="col-sm-6" style="margin-top: 40px;">
+                <img class="img-fluid" src="./images/Bitmap Copy 2.png" alt="Bitmap" style="max-width: 100%">
+            </div>
+            <div class="col-sm-6" style="color:#ffffff; margin-top: 40px;">
+                <h1 class="text-sm-left">Brand Name</h1>
+                <p class="text-sm-left" style="line-height: 70px;">iOS | ANDROID | WEB DEVELOPMENT</p>
+                <p class="text-sm-left" style="line-height: 20px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-sm-6 order__second" style="color:#ffffff; margin-top: 40px;">
+                <h1 class="text-sm-right">Brand Name</h1>
+                <p class="text-sm-right" style="line-height: 70px;">iOS | ANDROID | WEB DEVELOPMENT</p>
+                <p class="text-sm-right" style="line-height: 20px;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-sm-6 order__first" style="margin-top: 40px;">
+                <img class="img-fluid" src="./images/Bitmap Copy 3.png" alt="Bitmap" style="max-width: 100%">
+            </div>
+            
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center" style="margin-top: 60px">
+                <button type="button" class="btn" style="background-color:#FF4F5A; color: #ffffff;">SEE ALL WORK</button>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <!--Sub Main-->
+    <div class="submain container-fluid" style="margin-top: 90px;">
+        <div class="row">
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <h3 class="basetext1 text-center"><small>Questions, Comments, Concerns?</small></h3>
+                <p class="basetext2 text-sm-left" >We’d love to<br><mark style="background-color: #ffffff; color: #FF4F5A;">hear</mark>from<br>you!</p>
+            </div>
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="email">Your email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Something@websight.com" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="subject" class="form-control" id="subject" placeholder="Question about your article" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="message" class="form-control" id="message" placeholder="Your message starts with..." name="message">
+                    </div>
+                    <button type="submit" class="btn btn-block" style="background-color: #FF4F5A;color: #ffffff;">Send a message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer container-fluid" style="background-color: #020E35;">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-light">2020 © All rights reserved by Your company name</p>
+            </div>  
+        </div>
+    </div>
+       
+
 </body>
-
 </html>
