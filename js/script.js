@@ -1,11 +1,15 @@
-ScrollReveal({ reset: true }).reveal('.home');
-ScrollReveal().reveal('.secondSect');
-ScrollReveal().reveal('.img2', { interval: 16, delay: 500 });
-ScrollReveal({ reset: true }).reveal('.col');
+var loadR;
+
+function loadRR() {
+    loadR = setTimeout(showPage, 2000);
+}
+function showPage() {
+    document.getElementById("loadPage").style.display = "none";
+    document.getElementById("body").style.height = "100% !important";
+    document.getElementById("root").style.display = "block";
+}
+
 ScrollReveal().reveal('.services');
-ScrollReveal().reveal('.chooseUs', { interval: 16, delay: 500 });
-ScrollReveal().reveal('.caro');
-ScrollReveal().reveal('.carosel');
 
 
 $(window).scroll(function () {
