@@ -1,4 +1,7 @@
 /* navbar */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
 .navbar-custom {
 	background: linear-gradient(
 			264.09deg,
@@ -6,6 +9,11 @@
 			rgba(255, 255, 255, 0) 50.61%
 		),
 		#f50057;
+	font-size: 1.2rem;
+}
+
+.navbar button {
+	font-size: 1.5rem;
 }
 
 .navbar-custom .nav-item .nav-link {
@@ -20,20 +28,48 @@
 
 /* header */
 .jumbotron-custom {
-	background: linear-gradient(
+	/* background-color: linear-gradient(
 		127deg,
 		rgb(245, 0, 87) 0%,
 		rgba(255, 255, 255, 0) 100%
 	);
+	background-image: url('../images/header-image.png');
+	background: #eb01a5; */
+	/* background-image: url("../images/header-image.png"); fallback */
+	background-image: url('../images/header-image.png'),
+		linear-gradient(127deg, rgb(245, 0, 87) 0%, rgba(255, 255, 255, 0) 100%); /* W3C */
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: auto 100%;
+	color: #ffffff;
 }
 
 .container-custom {
 	width: 90%;
 }
 
-/* .jumbotron-custom .header-col {
-	border: 3px solid white;
-} */
+.header-column {
+	color: #ffffff;
+}
+
+.header-column .btn-submit {
+	background-color: #ffffff;
+	color: #f50057;
+	border-color: #f50057;
+	outline: none;
+}
+
+.header-column .btn-demo {
+	color: #ffffff;
+	border-color: #ffffff;
+	outline: #ffffff;
+	background-color: transparent;
+}
+
+.header-column .btn-submit:active,
+.header-column .btn-demo:hover {
+	outline: none;
+}
 /* client container */
 .client-custom {
 	background-image: url('../images/Rectangle\ 2.png');
