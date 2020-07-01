@@ -1,0 +1,186 @@
+.defaultBg {
+   background: #1e326c;
+}
+
+.font18pxbold {
+   font-size: 1.8rem;
+   font-weight: bold;
+}
+
+.font18pxnormal {
+   font-size: 1.8rem;
+   font-weight: normal;
+}
+
+.lg-heading {
+   font-size: 9.6rem;
+   font-weight: bold;
+}
+
+.paragraph-bold {
+   font-size: 1.8rem;
+   font-weight: 500;
+}
+
+.default-btn {
+   background-color: #3da9fc;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: 2.2rem;
+   color: white;
+   padding: 20px 30px;
+   height: 69px;
+}
+
+.navbar {
+   position: relative;
+   padding-left: 100px;
+   padding-right: 20px;
+}
+.navbar img {
+   width: 230.07px;
+   height: 62.97px;
+   object-fit: cover;
+}
+.navbar .nav-link {
+   position: relative;
+}
+.navbar-toggler-icon {
+   font-size: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+   color: white;
+}
+
+.active-nav {
+   position: relative;
+}
+
+.active-nav::after {
+   position: absolute;
+   content: "";
+   width: 50px;
+   bottom: 5px;
+   z-index: 10;
+   border-bottom: 1px solid #ffffff;
+   margin: auto;
+   margin-left: 3px;
+}
+
+.hero {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(
+         to left,
+         rgba(21, 5, 55, 0.4),
+         rgba(21, 5, 55, 0.4)
+      ),
+      url(../images/header-bg.png);
+   background-position: top center;
+   background-size: cover;
+   height: 650px;
+}
+.hero-body {
+   width: 1020px;
+}
+.hero-body h1 {
+   position: relative;
+   padding-left: 46px;
+}
+.hero-body h1::before {
+   position: absolute;
+   left: 0;
+   content: "";
+   border-left: 5px solid #f9a024;
+   height: 100%;
+}
+.hero-body p {
+   width: 507px;
+   line-height: 35px;
+   padding-left: 46px;
+}
+.hero-body button {
+   margin-left: 46px;
+}
+
+@media screen and (max-width: 1030px) {
+   .hero-body {
+      width: 99%;
+   }
+   .hero-body h1 {
+      font-size: 7rem;
+   }
+}
+@media screen and (max-width: 550px) {
+   .navbar {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .hero-body {
+      width: 99%;
+      text-align: center;
+   }
+   .hero-body h1 {
+      font-size: 4rem;
+      padding-left: 10px;
+   }
+   .hero-body p {
+      width: 99%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+   }
+   .hero-body button {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .paragraph-bold {
+      font-size: 1.4rem;
+   }
+
+   .default-btn {
+      font-size: 1.4rem;
+      height: 60px;
+   }
+}
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+}
+
+body {
+   box-sizing: border-box;
+   max-width: 100%;
+   overflow-x: hidden;
+   font-family: "Montserrat", sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

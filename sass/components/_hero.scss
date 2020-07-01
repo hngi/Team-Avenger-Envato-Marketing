@@ -1,0 +1,42 @@
+.hero {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(
+         to left,
+         rgba(21, 5, 55, 0.4),
+         rgba(21, 5, 55, 0.4)
+      ),
+      url(../images/header-bg.png);
+   background-position: top center;
+   background-size: cover;
+   height: 650px;
+
+   &-body {
+      width: 1020px;
+
+      h1 {
+         position: relative;
+         padding-left: 46px;
+
+         &::before {
+            position: absolute;
+            left: 0;
+            content: "";
+            border-left: 5px solid #f9a024;
+            height: 100%;
+         }
+      }
+
+      p {
+         width: 507px;
+         line-height: 35px;
+         padding-left: 46px;
+      }
+
+      button {
+         margin-left: 46px;
+      }
+   }
+}

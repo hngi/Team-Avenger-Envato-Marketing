@@ -1,0 +1,53 @@
+@media screen and (max-width: 1030px) {
+   .hero {
+      &-body {
+         width: 99%;
+
+         h1 {
+            font-size: 7rem;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .navbar {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .hero {
+      &-body {
+         width: 99%;
+         text-align: center;
+
+         h1 {
+            font-size: 4rem;
+            padding-left: 10px;
+         }
+
+         p {
+            width: 99%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+         }
+
+         button {
+            display: inline-block;
+            margin-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+   }
+
+   .paragraph-bold {
+      font-size: 1.4rem;
+   }
+
+   .default-btn {
+      font-size: 1.4rem;
+      height: 60px;
+   }
+}
