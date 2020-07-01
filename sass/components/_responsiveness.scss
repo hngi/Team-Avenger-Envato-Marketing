@@ -1,3 +1,54 @@
+@media screen and (max-width: 1207px) {
+   .about {
+      &-revenues {
+         & > span {
+            span {
+               font-size: 1.7rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1070px) {
+   .about {
+      flex-direction: column;
+      width: 99%;
+      height: 100%;
+      background-color: white;
+      margin-top: 40px;
+
+      &-img {
+         width: 600px;
+         margin: auto;
+         margin-bottom: 20px;
+
+         img {
+            position: static;
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+
+      &-text {
+         width: 600px;
+         margin: auto;
+         padding-left: 0;
+         text-align: center;
+         position: static;
+      }
+
+      &-revenues {
+         & > span {
+            justify-content: center;
+            span {
+               font-size: 2.2rem;
+            }
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 1030px) {
    .hero {
       &-body {
@@ -5,6 +56,27 @@
 
          h1 {
             font-size: 7rem;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .about {
+      &-img {
+         width: 99%;
+      }
+
+      &-text {
+         width: 99%;
+      }
+
+      &-revenues {
+         & > span {
+            width: 33%;
+            span {
+               font-size: 2rem;
+            }
          }
       }
    }
@@ -35,7 +107,6 @@
 
          button {
             display: inline-block;
-            margin-left: 0;
             margin-left: auto;
             margin-right: auto;
          }
@@ -46,8 +117,74 @@
       font-size: 1.4rem;
    }
 
+   .paragraph-bold-blue {
+      font-size: 1.2rem;
+   }
+
    .default-btn {
       font-size: 1.4rem;
       height: 60px;
+   }
+
+   .about {
+      &-revenues {
+         & > span {
+            width: 200px;
+            align-items: flex-end;
+
+            img {
+               width: 35px;
+               height: 35px;
+            }
+
+            span {
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .about {
+      &-revenues {
+         & > span {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+               margin: auto;
+               margin-bottom: 10px;
+            }
+
+            span {
+               font-size: 1.6rem;
+            }
+         }
+      }
+   }
+
+   .md-heading {
+      font-size: 4rem;
+      line-height: 40px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .about {
+      &-revenues {
+         flex-direction: column;
+
+         & > span {
+            width: 100%;
+         }
+
+         & > span {
+            &:not(:last-child) {
+               margin-bottom: 15px;
+            }
+         }
+      }
    }
 }

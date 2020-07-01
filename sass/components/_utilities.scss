@@ -17,9 +17,23 @@
    font-weight: bold;
 }
 
+.md-heading {
+   font-size: 4.8rem;
+   line-height: 50px;
+   font-weight: bold;
+   color: #1e326c;
+}
+
 .paragraph-bold {
    font-size: 1.8rem;
    font-weight: 500;
+}
+
+.paragraph-bold-blue {
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #3da9fc;
+   line-height: 20px;
 }
 
 .default-btn {
