@@ -1,0 +1,15 @@
+.approach {
+   height: 477px;
+
+   &-body {
+      display: flex;
+      flex: 1;
+
+      img {
+         width: 100px;
+         height: 100px;
+         object-fit: cover;
+         display: inline-block;
+      }
+   }
+}

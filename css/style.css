@@ -24,6 +24,11 @@
   color: #1e326c;
 }
 
+.xm-heading {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
 .paragraph-bold {
   font-size: 1.8rem;
   font-weight: 500;
@@ -173,6 +178,20 @@
   margin-right: 8px;
 }
 
+.approach {
+  height: 477px;
+}
+.approach-body {
+  display: flex;
+  flex: 1;
+}
+.approach-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: inline-block;
+}
+
 @media screen and (max-width: 1207px) {
   .about-revenues > span span {
     font-size: 1.7rem;
@@ -216,6 +235,17 @@
   }
   .hero-body h1 {
     font-size: 7rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .approach {
+    height: 100%;
+  }
+  .approach-body {
+    flex-direction: column;
+  }
+  .approach-body div:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 700px) {
