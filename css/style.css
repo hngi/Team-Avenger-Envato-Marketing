@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    min-height: 10rem;
+    padding: 2rem 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#overlay {
+    width: 100%;
+    min-height: 500px;
+    background-color: #000000a6;;
+    opacity: .8;
+    grid-area: 1/1/2/2;
+}
+
+#navigation {
+    grid-area: 1/1/2/2;
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    z-index: 40;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+#logo span {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: .3rem;
+    font-weight: bold;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.link a {
+    color: #fff;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+#header-text {
+    grid-area: 1/1/2/2;
+    z-index: 22;
+    width: 90%;
+    height: 100%;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-text h2 {
+    margin-bottom: 1rem;
+}
+
+#header-text p{
+    max-width: 40rem;
+}
+
+.light-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Buttons */
+
+.started {
+    width: 10rem;
+    padding: .3rem;
+    border: 1px solid transparent;
+    outline: none !important;
+    font-weight: 500;
+}
+
+/* Mobile */
+
+#mobile {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    z-index: 30;
+}
+
+.mobile-menu {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+    transform: translateX(-110%);
+    transition: .3s ease;
+    
+}
+
+.mobile-menu li a {
+    color: grey;
+    font-size: .9rem;
+}
+
+#hamburger {
+    width: 2rem;
+    height: 2rem;
+    padding: .2rem;
+    display: none;
+}
+
+#burger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bar {
+    width: 100%;
+    height: .2rem;
+    background-color: #000;
+}
+
+/* Mobile menu slide */
+
+.mobile-menu-slide {
+    transform: translateX(0%);
+}
+
+/* About us */
+
+.about-us {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-us-text {
+    width: 45%;
+    min-height: 300px;
+    margin-right: auto;
+}
+
+.about-us-text h2 {
+    margin: 1rem 0;
+}
+
+.about-us-text p {
+    padding: 1rem 0;
+}
+
+.dark-btn {
+    background-color: #3A3A3A;
+    color: #fff;
+}
+
+.about-us-image {
+    position: relative;
+    width: 45%;
+    min-height: 300px;
+}
+
+.about-us-image-one {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-image: url(../img/pc.png);
+}
+
+.about-us-image-two {
+    width: 60%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url(../img/cloud.png);
+}
+
+/* Services */
+.grey {
+    background-color: #F6F6F6;
+}
+
+.services {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services h2, .services p {
+    text-align: center;
+}
+
+.service {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card {
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card h6 {
+    margin: 1rem 0;
+    font-weight: 900;
+}
+
+.service-card p {
+    font-size: .9rem;
+}
+
+.service-card span {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/* Projects */
+
+.projects {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projects>p {
+    text-align: center;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 350px;
+    height: 300px;
+    margin-right: .2rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 170px;
+}
+
+.one {
+    background-image: url(../img/sc.png);
+    background-position: center;
+}
+
+.two {
+    background-image: url(../img/gg.png);
+    background-position: center;
+}
+
+.three {
+    background-image: url(../img/ch.png);
+    background-position: center;
+}
+
+.project-card h6 {
+    margin: .3rem 0;
+    font-weight: 900;
+}
+
+.project-card span {
+    color: #6FB2E1;
+    font-size: .8rem;
+}
+
+/* Gallery */
+
+.gallery {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery h2, .gallery p {
+    text-align: center;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 200px));
+    grid-gap: .5rem;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 200px;
+}
+
+.gallery-images img {
+    width: 100%;
+}
+
+/* Contact us */
+
+.contact-us {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-us h2, .contact-us p {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.contact-us input {
+    width: 60%;
+    background-color: #3C3D48;
+    display: block;
+    padding: .3rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.contact-us textarea {
+    width: 100%;
+    background-color: #3C3D48;
+    display: block;
+    padding: .3rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#subject {
+    width: 100%;
+}
+
+.contact-us input::placeholder, .contact-us textarea::placeholder {
+    color: #ffffff96;
+}
+
+.contact-us button {
+    margin: 0 auto;
+}
+
+.submit-btn {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.dark {
+    background-color: #3C3D48;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.dark-section {
+    background-color: #3C3D48;
+}
+
+footer h1 {
+    text-align: center;
+    letter-spacing: .3rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+}
+
+footer ul {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+footer>p {
+    text-align: center;
+    font-size: .9rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1000px) {
+    #links {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+    #mobile {
+        background-color: #fff;
+    }
+    .service {
+        flex-direction: column;
+    }
+    .service-card {
+        width: 40%;
+        margin: 1rem auto;
+    }
+    .service-card h6 {
+        text-align: center;
+    }
+    .contact-form {
+        max-width: 60%;
+    }
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        height: 15rem;
+        justify-content: space-around;
+    }
+    footer ul li {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-us {
+        flex-direction: column;
+    }
+    .about-us-text {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .about-us-text p {
+        text-align: justify;
+    }
+    .about-us-image {
+        width: 100%;
+    }
+    .project {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 100%;
+        height: 300px;
+    }
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #navigation {
+        width: 1440px;
+    }
+    header {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    #logo {
+        margin-left: 1rem;
+    }
+    .about-us {
+        width: 1440px;
+    }
+    .services {
+        width: 1440px;
+    }
+    .grey {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .projects {
+        width: 1440px;
+    }
+    .project {
+        width: 1440px;
+        justify-content: space-between;
+    }
+    .contact-us {
+        width: 1440px;
+    }
+    .dark-section {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
