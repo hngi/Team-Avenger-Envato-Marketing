@@ -253,6 +253,10 @@ html {
   }
 }
 
+#card-wrapper {
+  text-align: -webkit-center;
+}
+
 a:hover {
   text-decoration: none;
 }
