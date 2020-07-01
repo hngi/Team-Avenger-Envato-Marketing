@@ -1,0 +1,76 @@
+/* navbar */
+.navbar-custom {
+	background: linear-gradient(
+			264.09deg,
+			rgba(245, 0, 87, 0.75) -6.49%,
+			rgba(255, 255, 255, 0) 50.61%
+		),
+		#f50057;
+}
+
+.navbar-custom .nav-item .nav-link {
+	color: #ffffff;
+}
+
+.navbar-custom .btn-submit {
+	background-color: #ffffff;
+	color: #f50057;
+	outline: none;
+}
+
+/* header */
+.jumbotron-custom {
+	background: linear-gradient(
+		127deg,
+		rgb(245, 0, 87) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.container-custom {
+	width: 90%;
+}
+
+.jumbotron-custom .header-col {
+	border: 3px solid white;
+}
+/* client container */
+.client-custom {
+	background-image: url('../images/Rectangle\ 2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: auto;
+	width: 100%;
+
+	/* background-position: center; */
+	/* height: 100%; */
+}
+/* Our services */
+.card-img-top {
+	width: 5rem;
+}
+/* Team */
+.our-team {
+	background: linear-gradient(
+			228.09deg,
+			#f50057 34.75%,
+			rgba(255, 255, 255, 0) 133.88%
+		),
+		rgba(245, 0, 87, 0.75);
+}
+
+/* testimonials */
+.testimonials .testimonial-img {
+	border-radius: 50%;
+	width: auto;
+}
+/* foooter */
+footer {
+	background: linear-gradient(
+			153.9deg,
+			#f50057 4.84%,
+			rgba(255, 255, 255, 0) 102.04%
+		),
+		rgba(245, 0, 87, 0.75);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
