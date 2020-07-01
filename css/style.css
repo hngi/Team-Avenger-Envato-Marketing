@@ -473,7 +473,7 @@ a:hover{
 
     .wave{
         margin-top: -5px;
-        max-width: 100% ;
+        width: 100% ;
     } 
 
     .desktop{
@@ -814,6 +814,9 @@ html{
     height: 100%;
 }
 
+#services, #testimonials, #contact{
+    height: 100%;
+}
 
 @media all and (max-width: 330px) {
 
