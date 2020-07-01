@@ -10,6 +10,23 @@
    }
 }
 
+@media screen and (max-width: 1060px) {
+   .footer {
+      grid-template-columns: 1fr 1fr;
+
+      &-subscribe {
+         text-align: center;
+         grid-column: 1 / -1;
+         grid-row: 2;
+         margin-top: 20px;
+         width: 100%;
+         input {
+            width: 100%;
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 1070px) {
    .about {
       flex-direction: column;
@@ -91,6 +108,41 @@
    }
 }
 
+@media screen and (max-width: 830px) {
+   .footer {
+      grid-template-columns: 1fr;
+
+      address {
+         text-align: center;
+         ul {
+            li {
+               justify-content: center;
+               margin-right: auto;
+               margin-left: auto;
+            }
+         }
+      }
+
+      &-social {
+         width: 250px;
+         margin-right: auto;
+         margin-left: auto;
+
+         li {
+            justify-content: center;
+         }
+      }
+
+      &-links {
+         margin-top: 10px;
+      }
+
+      &-subscribe {
+         grid-row: 3;
+      }
+   }
+}
+
 @media screen and (max-width: 880px) {
    .approach {
       height: 100%;
@@ -133,16 +185,6 @@
 }
 
 @media screen and (max-width: 550px) {
-   .testimonial {
-      height: 100%;
-
-      p {
-         width: 99%;
-      }
-   }
-}
-
-@media screen and (max-width: 550px) {
    .navbar {
       padding-left: 10px;
       padding-right: 10px;
@@ -173,6 +215,14 @@
       }
    }
 
+   .testimonial {
+      height: 100%;
+
+      p {
+         width: 99%;
+      }
+   }
+
    .paragraph-bold {
       font-size: 1.4rem;
    }
@@ -199,6 +249,37 @@
 
             span {
                font-size: 1.6rem;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 485px) {
+   .go-up {
+      bottom: 200px;
+   }
+
+   .footer {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      li {
+         font-size: 1.6rem;
+      }
+
+      &-social {
+         width: 99%;
+      }
+
+      &-links {
+         ul {
+            &:not(:last-child) {
+               padding-left: 0;
+            }
+
+            a {
+               font-size: 1.8rem;
             }
          }
       }
@@ -238,12 +319,11 @@
    }
 }
 @media screen and (max-width: 350px) {
-   .navbar {
-      img {
-         width: 130.07px;
-         object-fit: contain;
-      }
+   .logo {
+      width: 130.07px;
+      object-fit: contain;
    }
+
    .services {
       &-body {
          p {
