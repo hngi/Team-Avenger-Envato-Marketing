@@ -218,9 +218,23 @@
   width: 315px;
   margin: auto;
 }
+.services-body .border-circle {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .services-body img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   display: inline-block;
 }
@@ -237,7 +251,7 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 .brands-body .group-1 img,
 .brands-body .group-2 img,
