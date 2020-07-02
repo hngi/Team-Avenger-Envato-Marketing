@@ -434,6 +434,8 @@ color: #1C1B1E;
 
 .flex button{
 	border-radius: 0px !important;
+	/*width:50%;*/
+	height: 52px;
 }
 
 .carouselExampleControls{
