@@ -17,7 +17,6 @@
     list-style: none;
     color: black;
 }
-
 .buttonIn { 
     /*width: 300px; 
     position: relative; */
@@ -84,19 +83,6 @@
         text-align: left;
         font-size: 9px;
     }
-    .love_bg{
-        position: absolute;
-        left: 200px;
-        top: 250px;
-        z-index: 2;
-        size: 10px;
-    }
-    .love{
-        position: absolute;
-        left: 220px;
-        bottom: 0px;
-        z-index: 3;
-    }
     .qus{
         color:white;
         text-align: center;
@@ -108,18 +94,6 @@
 @media (min-width: 769px){
     .small{
         display: none;
-    }
-    .forUnder1{
-        position: absolute;
-        top: 75px;
-        left: 55px;
-        z-index: -1;
-    }
-    .forUnder2{
-        position: absolute;
-        top: 75px;
-        right: 15px;
-        z-index: -1;
     }
     .two_2{
         display: grid;
@@ -145,18 +119,6 @@
         right: 300px;
         padding: 5px;
         z-index: 1;
-    }
-    .love_bg{
-        position: absolute;
-        left: 120px;
-        top: 330px;
-        z-index: 2;
-    }
-    .love{
-        position: absolute;
-        left: 140px;
-        bottom: 80px;
-        z-index: 3;
     }
     .qus{
         color:white;
