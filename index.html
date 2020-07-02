@@ -12,12 +12,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="body.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
   <script src="js/header.js"></script>
 </head>
 
 <body id="body">
   <!-- NAVIGATION BAR -->
-  <header class="toolbar">
+  <header>   <!-- class="toolbar" -->
     <nav class="toolbar_navigation">
       <div class="toolbar_logo">
         <h1>iBuild</h1>
@@ -28,32 +30,30 @@
           <div class="ham_line"></div>
         </button>
       </div>
-      <div class="toolbar_navigation-items">
-        <ul>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Our Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <button class="btn btn-light" href="#">Contact Us</button>
-        </ul>
-      </div>
+        <div class="toolbar_navigation-items">
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Our Studio</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <button class="btn btn-light" href="#">Contact Us</button>
+          </ul>
+        </div>
     </nav>
   </header>
   <div id="hidden">
     <nav id="side">
-      <button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
+      <!-- <button class="hamburger" id="hamturn" onclick="toggle(); backdrop(); hamturn()">
         <div class="ham_line"></div>
         <div class="ham_line"></div>
         <div class="ham_line"></div>
-      </button>
+      </button> -->
       <ul>
         <li><a href="#">Web Design</a></li>
         <li><a href="#">Graphic Design</a></li>
         <li><a href="#">Our Studio</a></li>
         <li><a href="#">Portfolio</a></li>
-        <div class="signup_button">
            <button class="btn btn-light" href="#">Contact Us</button>
-        </div>
       </ul>
     </nav>
   </div>
@@ -64,21 +64,25 @@
       <p style="color: #F34A00;">Email Marketing has changed its narrative</p>
   <h1>Eye Catching and Purpose Driven</h1>
   <p id="intro">Our uninterrupted service sets you as an agency untop of you game with your leads.</p>
-  <button class="btn btn-orange">See works</button>
-  <button class="btn btn-light outline">Learn More</button>
+  <button class="btn btn-orange hidden mt-1">See works</button>
+  <button class="btn btn-light outline mt-1 hidden">Learn More</button>
     </div>
     <div class="col-md-5 col-sm-12" id="orange">
       <img src="img/videoImage.png">
-      <div id="playBttn">
+      <div id="playBttn" class="hidden">
         <div id="button">
         <img src="img/playBttn.png"></div>
         <a href="" style="font-size: 20px; color: white; margin-top: 25px; margin-left: 7px;">Play Video</a>
       </div>
-      <div id="arrows">
+      <div id="arrow" class="hidden">
       <img src="img/Vector(1).png">
       <img src="img/Vector(1).png" style="transform: rotate(-180deg); margin-left: 40px;">
     </div>
+   
     </div>
+     <div class="show bttn">
+    <button class="btn btn-orange">See works</button><br>
+  <button class="btn btn-light outline">Learn More</button></div>
     
   </div>
 </div>
@@ -91,12 +95,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <div class="content">
+
+                       <div class="content hidden">
                             <img src="img/layer1.png" />
                             <img src="img/shopify-logo.png" />
-                            <img src="img/trelloLogo1.png" />
-                            <img src="img/canonWordmark.png" />
+                            <img src="img/TrelloLogo1.png" />
+                            <img src="img/CanonWordmark.png" />
                             <img src="img/PinterestLogo.png" />
+                          </div>
+                        <div class="content show">
+                          <div class="col-md-4 col-sm-6">
+                            <img src="img/layer1.png" />
+                            <img src="img/shopify-logo.png" />
+                          </div>
+                          <div class="col-md-4 col-sm-6">
+                            <img src="img/TrelloLogo1.png" />
+                            <img src="img/CanonWordmark.png" />
+                          </div>
+                          <div class="col-md-2 col-sm-12 text-center"><img src="img/PinterestLogo.png" /></div>                       
                    </div>
               </div>
             </div>
@@ -109,11 +125,12 @@
               </div>
               <div class="experiences">
                 <h1>We craft experiences for businesses to help reach their customers </h1>
+                <p id="text" class="show">Our digital marketting experts are around the clock and determined to help your business get to the right customer. Accept our offer to see more.</p>
                 <img src="img/genre-images-2.png">
               </div>          
             </div>
             <div class="text-left col-md-6" class="details">
-              <p id="text">Our digital marketting experts are around the clock and determined to help your business get to the right customer. Accept our offer to see more.</p>
+              <p id="text" class="hidden">Our digital marketting experts are around the clock and determined to help your business get to the right customer. Accept our offer to see more.</p>
               <div class="section-title2 service">
                 <p>Our Services</p>
                 <ol>
@@ -133,21 +150,22 @@
 <section class="about">
    <div class="container-fluid">
           <div class="row" style="margin-bottom: 25%;">
-            <div class="text-left col-md-6  my-auto" style="left: 14%;">
+            <div class="text-left col-md-4  my-auto" id="help">
               <div class="section-title2">
-                <p>HOW WE CAN HELP YOU?</p>
+                <p>Who We Are</p>
               </div>
               <div class="experiences">
                 <h1>Look Good, Get Found and Keep Customers</h1>
               </div> 
               <div class="details">
               <p id="text"  style="margin-top: 5%;">We believe in steadfast opportunities for your company and getting things done promptly is something we cannot over emphasize. Lead generation and company follow up is well preached in our arsenal</p>
-              <button class="btn btn-dark" href="#">Explore More</button>
+              <button class="btn btn-dark hidden" href="#">Explore More</button>
               </div>
             </div>
-                <div class="text-right col-md-6 p-0  mt-auto">
-                 <img src="img/genre-images-2.png" style="margin-top: 15%; width: 681.84px; height: 615.97px;">
+                <div class="text-right col-md-4 p-0  mt-auto">
+                 <img src="img/genre-images-2.png">
             </div>
+            <button class="btn btn-dark show" href="#">Explore More</button>
           </div>
         </div>
       </section>     
@@ -156,21 +174,33 @@
   
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
         <div class="col-md-12">
         <div class="col-md-6">
-          <img src="img/BET1.png" style="margin-top: -70%;">
+          <img src="img/BET1.png" id="image">
         </div>
-        <div class="col-md-6">
-          <img src="img/alonso-reyes1.png" style="margin-top: -30%;">
+        <div class="col-md-6 col-sm-12">
+          <img src="img/alonso-reyes1.png" id="img">
         </div>
       </div>
-
-
-
-
+      <div class="col-sm-12 hidden">
+        <div class="timeline-wrapper">
+            <div class="node">
+              <h3>25+ Years Experience</h3>
+              <p>We have been in the industry for 25 years and have successfully propelled over 1000+ businesses</p>
+            </div>
+            <div class="node">
+              <h3>Servicing in the Local area</h3>
+              <p> We have been in the industry for 25 years and have successfully propelled over 1000+ businesses </p>
+            </div>
+            <div class="node">
+              <h3>We’re helpful</h3>
+              <p>We have been in the industry for 25 years and have successfully propelled over 1000+ businesses</p>
+            </div>
+          </div>
       </div>
-      <div class="col-md-6 mt-5">
+      </div>
+      <div class="col-md-6 mt-5 hidden">
         <div class="section-title2 mt-5">
                 <p>WHY CHOOSE US ?</p>
               </div>
@@ -182,13 +212,383 @@
               <button class="btn btn-dark" href="#">Contact Us</button>
               </div>
             </div>
+            <div class="col-md-12">
+          <h2></h2>
+        </div>
         
       </div>
+  
+</div>
+<div class="container-fluid text-center">
+<div class="col-md-6 mt-5 show text-center">
+        <div class="section-title2 mt-5">
+                <p>WHY CHOOSE US ?</p>
+              </div>
+              <div class="experiences">
+                <h1>Experienced Helpful and Local.</h1>
+              </div> 
+              <div class="details">
+              <p id="text"  style="margin-top: 5%;">We believe in steadfast opportunities for your company and getting things done promptly is something we cannot over emphasize. Lead generation and company follow up is well preached in our arsenal</p>
+             
+              </div>
+            </div>
+            <div class="col-sm-12">
+        <div class="timeline text-center">
+            <div class="node-wrraper">
+              <h3>25+ Years Experience</h3>
+              <p>We have been in the industry for 25 years and have successfully propelled over 1000+ businesses</p>
+            </div>
+            <div class="node-wrraper">
+              <h3>Servicing in the Local area</h3>
+              <p> We have been in the industry for 25 years and have successfully propelled over 1000+ businesses </p>
+            </div>
+            <div class="node-wrraper">
+              <h3>We’re helpful</h3>
+              <p>We have been in the industry for 25 years and have successfully propelled over 1000+ businesses</p>
+            </div>
+          </div>
+      </div>
+       <button class="btn btn-dark" href="#">Contact Us</button>
+</div>
+
+</section>  
+
+<section class="grid-pic">
+  <div class="container collection hidden">
+    <div class="row" style="margin-top: 10%;">
+       <div class="coll col-md-4">
+          <p>OUR PORTFOLIO</p>   
+          <h1>A collection of our latest work</h1> 
+        </div>
+        <div class="coll col-md-1">
+          <button class="btn">All Portfolio</button>
+        </div>
+        <div class="coll col-md-1">
+          <button class="btn">Webdesign</button>
+        </div>
+        <div class="coll col-md-1">
+          <button class="btn">Compaigns</button>
+        </div>
+        <div class="coll col-md-1">
+          <button class="btn">SEO</button>
+        </div>
     </div>
   </div>
 
+  <div class="container collection show">
+    <div class="row" style="margin-top: 10%;">
+       <div class="coll col-md-12">
+          <p>OUR PORTFOLIO</p>   
+          <h1>A collection of our latest work</h1> 
+          <select>
+            <option>All Protfolio</option>
+            <option>Webdesign</option>
+            <option>Campaigns</option>
+            <option>SEO</option>
+          </select>
+        </div>
+    </div>
+  </div>
 
-</section>  
+</section>
+
+<section class="responsive-img text-center">
+  <div class="container">
+<!-- flaskbox photo grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/Rectangle21.png" style="width:100%">
+    <img src="img/Rectangle23.png" style="width:100%">
+    <img src="img/Rectangle25.png" style="width:100%">
+    <img src="img/Rectangle26.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/Rectangle18.png" style="width:100%">
+   <img src="img/Rectangle22.png" style="width:100%">
+     <img src="img/Rectangle22(1).png" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/Rectangle20.png" style="width:100%">
+    <img src="img/Rectangle24.png" style="width:100%">
+    <img src="img/Rectangle27.png" style="width:100%">
+    <img src="img/Rectangle28.png" style="width:100%">
+  </div>
+</div>
+  <button class="btn btn-dark"> See More </button>
+  </div>  
+
+</section>
+
+
+<section class="us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="img/Ellipse5.png">
+      </div>
+      <div class="col-md-7">
+        <h1>Look Good, Get Found</h1>
+        <h1>and Keep Customers</h1>
+        <br>
+        <p>We believe in steadfast opportunities for your</p>
+        <p>company and getting things done promptly is</p>
+        <p>something we cannot over emphasize. Lead </p>
+        <div class="flex">
+           <button class="btn btn-orange hidden mt-2">Find Out More</button>
+           <button class="btn outline hidden">Our Studio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <div class="section-title2 col-md-4 text-left">
+                <p>TESTIMONIALS</p>
+                <h1>Here’s what people think about us</h1>
+                <a class="sub-title">Over 1000+ clients. are you the next one?</a>
+            </div>
+      <div class="col-md-4 flex-box hidden">
+        <img src="img/Group9.png" href="#cards">
+        <img src="img/Group10.png" href="#cards">
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="container hidden">
+          <div class="row">
+            <div class="carouselExampleControls carousel slide w-100" id="cards" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse8.png"></div>
+                    <div class="col-md-12">
+                    <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse9.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse10.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+                </div>
+                 <div class="carousel-item">
+                  <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse8.png"></div>
+                    <div class="col-md-12">
+                    <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse9.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse10.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- carousel for mobile view -->
+
+<div class="container show">
+    <div class="row">
+      <div class="carouselExampleControls carousel slide w-100" id="cards" data-ride="carousel">
+        <div class="carousel-inner w-100 " role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse8.png"></div>
+                    <div class="col-md-12">
+                    <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+              </div>
+                <div class="carousel-item">
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse9.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-4 card">
+                    <div class="col-md-6 test-img">
+                    <img src="img/Ellipse10.png"></div>
+                    <div class="col-md-12">
+                     <p>“i love what this platform has done for my business. i highly recommend”</p>
+                    <h3>Jhone Doe</h3>
+                    <p>ABC Company</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="container text-center">
+  <div class="col-sm-12 py-5 review">
+    <img src="img/Group11.png"><br>
+    <button class="btn btn-dark"> See All Review </button>
+  </div>
+</div>
+</section>
+
+<section class="contact bg-light">
+  <div class="container py-5">
+    <div class="row bg-light">
+      <div class="col-sm-12">
+        <div class="section-title2 col-md-6 text-left" id="">
+                <p>CONTACT US</p>
+                <h1>Let's stay in touch</h1>
+                <br>
+                <a class="sub-title">We believe in steadfast opportunities for your 
+                    <br>company and getting things done promptly is</a>
+                    <div class="flex text-left" id="social">
+                      <img src="img/twitter.png">
+                      <img src="img/Youtube.png">
+                      <img src="img/Linkedin1.png">
+                    </div><br>
+                    <a>Hours: 24 hours a day, 7 days a week</a><br>
+                    <p style="font-size: 24px; line-height:7rem; text-decoration: underline;">555 0129</p>
+                    <p style="font-size: 24px; line-height:7rem; text-decoration: underline;">hello@icontact.com</p>
+            </div>
+    <div class="col-md-6">
+      <form method="post" onsubmit="return validateStudentForm()" name="studentForm" id="student-detail">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="col-sm-6">
+                <div class="col-md-12">  
+                <label for="fname">Full Name</label> 
+              </div>
+              <div class="col-md-12">
+                <input type="text" id="fname" placeholder="Enter Full name" name="first_name"  > 
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="col-md-12">
+                    <label for="mailid">Email Id </label>   
+                </div>
+                    <div class="col-md-12">
+                        <input type="text" placeholder="Enter valid email" name="email_id"  >  
+                </div>
+            </div>
+             <div class="col-sm-6">
+                <div class="col-md-12">
+                    <label for="lname">Company Address</label>
+                </div>
+                <div class="col-md-12">
+                        <input type="text" placeholder="Enter Company Name" name="last_name">  
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-md-12">
+                    <label for="number">Phone Number</label>
+                    </div>
+                    <div class="col-md-12">     
+                        <input type="number" placeholder="+0123456789" name="mnum"  >
+                    </div>
+                </div>
+                    <div class="col-sm-12">
+                <div class="col-md-12">
+                    <label for="address">Message(optional)</label>
+                    </div>
+                        <div class="col-md-12">
+                           <textarea type="text" class="w-100" cols="24" rows="1" name="address" placeholder="Enter Message"></textarea>
+                    </div>
+                </div>     
+                <div class="row">
+                <div class="col-md-10">
+                  <div class="col-sm-7 mr-5">
+                    <input type="checkbox" name="" class="mr-2" style="line-height: 2rem;margin-left: 10%;float: left"><a style="line-height: 2rem;margin-left: 20%;float: left;margin-top: -7%;">By clicking submit, you agree to our Terms and conditions</a>
+                  </div>
+                  <div class="col-sm-3 ml-5">
+                    <button type = "submit" class="btn btn-dark">Submit</button>        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 bg-dark company">
+        <h3><img src="img/Line.png"> OFFICE ADDRESS</h3>
+        <h1>23 Raleway strt.</h1>
+        <h1>California, LA.</h1>
+        <a href="" style="color: #F34A00;">View Map <span><img src="img/vectorArrow.png"></span></a>
+      </div>
+      <div class="col-md-7 col-sm-12 map">
+        <img src="img/map.png">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+    <div class="toolbar_logo">
+        <h1>iBuild</h1>
+      </div>
+      <div class="toolbar_navigation-items">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#" active>Support</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">2020, All Rights Reserved</a></li>
+        </ul>
+      </div>
+
+</footer>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
