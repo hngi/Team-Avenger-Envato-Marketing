@@ -1,0 +1,903 @@
+*{
+	box-sizing: border-box;/*To ensure contents fits into the page perfectly*/
+	margin: 0;
+	padding: 0;
+}
+
+/*General styling of the html body */
+body{	
+	overflow: auto;
+	font-family: sans-serif;
+}
+
+/*Header Section Styling*/
+header .container{
+	padding:20px 6% ;
+	box-shadow: 0px 4px 3px rgba(73, 73, 73, 0.21);
+	background: rgba(253, 253, 255, 0.9);
+}
+
+header .container .logo{
+	display: inline-block;
+}
+
+header .container .logo p{
+	font-size: 1.7em;
+	color: #3168F4;
+	font-weight: 700;
+}
+
+header .container .navbar{
+	display: inline-block;
+	float: right;
+}
+
+header .container .nav{
+	display: none;
+}
+
+header .container .navbar li {
+	margin-top: 5px;
+	display: inline-block;	
+}
+
+header .container .navbar li a{
+	text-decoration: none;
+	color: #3168F4;
+	margin-right: 30px;
+	padding: 10px 0;
+}
+
+header .container .navbar .activepage a{
+	border-bottom: 1px solid #7e33ff;
+}
+
+header .container .navbar li a:hover{
+	color: #4100b3;
+}
+
+header .container .hamburger{
+	display: none;
+}
+
+
+/*Home Styling*/
+#home{
+	background-image: url("../img/home-bckgrd.png");
+	background-size: auto 100%;
+	background-position: left bottom;
+}
+
+#home .container{
+	background-position: bottom left;
+	background-color:rgba(26, 90, 255, 0.8);	
+	padding:50px 6% ;
+}
+
+#home .container .section-left{
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	top:-100px;
+	margin-right: 10%;
+}
+
+#home .container .section-left .section-head h3{
+	font-size: 1.6em;
+	color: #fff;
+	padding: 5px 0;
+}
+
+#home .container .section-left .section-head p{
+	font-size: 1.3em;
+	padding-bottom: 25px;
+	color: 	 #000066;
+	font-weight: 700;
+}
+
+#home .container .section-left .section-info p{
+	font-size: 1.1em;
+	color: #fff;
+	line-height: 25px;
+}
+
+#home .container .section-right{
+	display: inline-block;
+	width: 30%;
+}
+
+#home .container .section-right img{
+	max-width: 100%;
+}
+
+#about .container{
+	padding:50px 6%;
+}
+
+#about .container .section-top .section-left{
+	width: 30%;
+	display: inline-block;
+}
+
+#about .container .section-top .section-left h3{
+	color: #3168F4;
+	padding-bottom: 20px;
+}
+
+#about .container .section-top .section-left p{
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+
+#about .container .section-top .section-left .contact p{
+	color:  #0E980B;
+	font-weight: 700;
+}
+#about .container .section-top .section-right{
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: -120px;
+	z-index: 1;
+	width: 30%;
+}
+
+#about .container .section-top .section-right form{
+	border-radius: 10px;
+	padding: 20px;
+	background-color: 	 #fff;
+	box-shadow: 0px 4px 3px rgba(73, 73, 73, 0.21);
+	z-index: 1;
+	
+}
+
+#about .container .section-top .section-right .textfield2,
+#about .container .section-top .section-right textarea{
+	width: 100%;
+	line-height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #141313;
+	padding-left: 5px;
+	outline: none;
+}
+
+#about .container .section-top .section-right button{
+	padding: 10px;
+	color: #fff;
+	background-color:#0E980B;
+	border-radius: 5px;
+	outline: 0px;
+}
+
+#about .container .section-bottom{
+	margin-top: 50px;
+	clear: both;
+}
+
+#about .container .section-bottom .section-info{
+	width: 25%;
+	margin-right: 10%;
+	display: inline-block;
+}
+
+#about .container .section-bottom .section-info h4{
+	padding-bottom: 7px;
+}
+
+#about .container .section-bottom .section-info p{
+	line-height: 24px;
+}
+#about .container .section-bottom .last{
+	float: right;
+	margin-right: 0px;
+}
+
+#services{
+	background-image: url("../img/product-bckgrd.png");
+	background-size: auto 100%;
+	background-position: left bottom;
+}
+
+#services .container{
+	padding:50px 6%;
+	background: rgba(49, 105, 244, 0.3);
+}
+
+#services .container .section-top{
+	margin-bottom: 20px;
+}
+
+#services .container .section-top h3{
+	text-align: center;
+	color:#3168F4;
+	font-size: 1.4em;
+}
+
+#services .container .section-top p{
+	text-align: center;
+	color:#141313;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+#services .container .section-info{
+	margin: 50px 0;
+}
+
+#services .container .section-info .products{
+	background: #fff;
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	margin-right: 20px;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+#services .container .section-info .products img{
+	height: 130px;
+	margin: 0 28%;
+	width: 140px;
+	margin-bottom: 15px;
+}
+*/
+#services .container .section-info .second img,
+#services .container .section-info  .third img,
+#services .container .section-info .fourth img{
+	width: 90px;
+	margin: 0 30%;
+	margin-bottom: 25px;
+	height: 120px;
+}
+
+#services .container .section-info .products h4{
+	text-align: center;
+	padding-bottom: 40px;
+	font-size: 1.2em;
+}
+
+#services .container .section-info .products button{
+	color: #fff;
+	padding: 10px 30px;
+	background-color: #3168F4;
+	outline: none;
+	border: 0.5px solid #3168F4;
+	font-size: 1.2em;
+	border-radius: 10px;
+	margin: 0 30%;
+}
+
+#component .container{
+	padding:50px 6%;
+}
+
+#component .container .section-top{
+	margin-bottom: 50px;
+}
+
+#component .container .section-top h3{
+	text-align: center;
+	color:#3168F4;
+	font-size: 1.4em;
+}
+
+#component .container .section-top p{
+	text-align: center;
+	color:#141313;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+#component .container .section-bottom .section-left,
+#component .container .section-bottom .section-center{
+	width: 30%;
+	display: inline-block;
+}
+
+#component .container .section-bottom .section-right{
+	width: 30%;
+	display: inline-block;
+	float: right;
+}
+
+#component .container .section-bottom .section-left .section-info,
+#component .container .section-bottom .section-right .section-info{
+	margin-bottom: 30px;
+}
+
+#component .container .section-bottom .section-left .section-info h3,
+#component .container .section-bottom .section-right .section-info h3{
+	color: #3168F4;
+	margin-bottom:5px;
+	font-size: 1.3em;
+}
+
+#component .container .section-bottom .section-left .section-info h4,
+#component .container .section-bottom .section-right .section-info h4{
+	color: #0E980B;
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+
+#component .container .section-bottom .section-left .section-info p,
+#component .container .section-bottom .section-right .section-info p{
+	font-size: 0.9em;
+	line-height: 23px;
+}
+
+#component .container .section-bottom .section-right .section-info p,
+#component .container .section-bottom .section-right .section-info h4,
+#component .container .section-bottom .section-right .section-info h3{
+	text-align:right;
+}
+
+#component .container .section-bottom .section-center img{
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	top: -100px;
+	left: 20px;
+}
+
+#offers .container{
+	padding:50px 6%;
+	background: rgba(106, 145, 244, 0.5);
+}
+
+#offers .container h3{
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 1.4em;
+}
+
+#offers .container .section-top{
+	margin: 20px 0;
+}
+
+#offers .container .section-top .section-left{
+	display: inline-block;
+	width: 50%;
+}
+
+#offers .container .section-top .section-right{
+	display: inline-block;
+	width: 35%;
+	position: relative;
+	top: -50px;
+}
+
+#offers .container .section-bottom .section-left{
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	top: -50px;
+}
+
+#offers .container .section-bottom .section-right{
+	display: inline-block;
+	width: 35%;
+}
+
+#offers .container .section-bottom .section-left h4,
+#offers .container .section-top .section-right h4{
+	font-size: 1.6em;
+	margin-bottom: 20px;
+}
+
+#offers .container .section-bottom .section-left p,
+#offers .container .section-top .section-right p{
+	font-size: 1em;
+	line-height: 23px;
+	margin-bottom: 30px;
+	width: 50%;
+}
+
+#offers .container .section-bottom .section-left img,
+#offers .container .section-top .section-right img{
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+#offers .container .section-bottom .section-left button,
+#offers .container .section-top .section-right button{
+	padding: 10px 20px;
+	background-color: #3168F4;
+	color: #fff;
+	outline: none;
+	border: 1px solid #3168F4;
+	border-radius: 5px;
+}
+
+footer .container{
+	padding: 20px 12%;
+	background-color: #3168F4;
+}
+
+footer .container .vendor{
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+footer .container .vendor img{
+	margin-right: 5%;
+}
+
+footer .container .contact{
+	padding: 0 3%;
+	color: #fff;
+}
+
+footer .container .contact .section{
+	margin-bottom: 40px;
+}
+
+footer .container .contact .section .left,
+footer .container .contact .section .center,
+footer .container .contact .section .right{
+	display: inline-block;
+}
+
+footer .container .contact .section .afar{
+	float: right;
+}
+
+footer .container .contact .section .left h3{
+	padding-bottom: 10px;
+}
+
+footer .container .contact .section .left .section-details{
+	margin-bottom: 20px;
+}
+footer .container .contact .section .left .section-details img{
+	display: inline-block;		
+}
+
+footer .container .contact .section .left .section-details .info{
+	display: inline-block;
+	width: 60%;
+}
+
+footer .container .contact .section .left .section-details .info p{
+	font-size: 0.9em;
+}
+
+footer .container .contact .section .center{
+	margin-left: 5%;
+}
+
+footer .container .contact .section .center h3,
+footer .container .contact .section .right h3{
+	margin-bottom: 30px;
+}
+
+footer .container .contact .section .center .details li,
+footer .container .contact .section .right .details li{
+	list-style: none;
+}
+
+footer .container .contact .section .center .details li a,
+footer .container .contact .section .right .details li a{
+	text-decoration: none;
+	color: #fff;
+	line-height: 25px;
+}
+
+footer .container .contact .section .center .details li a:hover,
+footer .container .contact .section .center .details li a:focus,
+footer .container .contact .section .right .details li a:hover,
+footer .container .contact .section .right .details li a:focus{	
+	color: #cccccc;
+}
+
+footer .container .contact .section .right .img-section{
+	margin-top: 20px;
+}
+
+footer .container .contact .rights{
+	text-align: center;
+}
+
+
+/*Responsive Design for Desktop*/
+@media only screen and (min-width: 1085px) and (max-width: 1300px) {
+	footer .container .vendor img{
+		margin-right: 3%;
+		
+	}
+}
+
+/*Responsive Design for tablet and Desktop*/
+@media only screen and (min-width: 830px) and (max-width: 1084px) {
+	#home .container .section-left{
+		top:-50px;		
+	}
+	
+	#offers .container .section-top .section-left img,
+	#offers .container .section-bottom .section-right img{
+		width: 300px;
+	}
+	
+	#offers .container .section-bottom .section-left p,
+	#offers .container .section-top .section-right p{
+		width: 90%;
+	}
+	
+	footer .container .vendor img{
+		margin-right: 2%;
+		width: 65px;
+		height: 60px;
+	}
+	
+}
+
+/*Responsive Design for Mobile*/
+@media only screen and (min-width: 230px) and (max-width: 829px) {
+	header .container .navbar{
+		display: none;
+	}
+	
+	header .container .hamburger{
+		display: inline-block;
+		float: right;
+	}
+	
+	#home{
+		background-image: url("../img/home-bckgrd.png");
+		background-size: auto 100%;
+		background-position: left bottom;
+	}
+
+	#home .container{
+		background-position: bottom left;
+		background-color:rgba(26, 90, 255, 0.8);	
+		padding:50px 6% ;
+	}
+
+	#home .container .section-left{
+		display: block;
+		width: 100%;
+		top:0px;		
+	}
+
+	#home .container .section-right{
+		display:block;
+		width: 100%;
+	}	
+	
+	#about .container .section-top .section-left{
+		width: 100%;
+		display: block;
+	}
+	
+	#about .container .section-top .section-right{
+		display: block;
+		float: left;
+		position: relative;
+		top: 0px;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	#about .container .section-top .section-right form{
+		border-radius: 10px;
+		padding: 20px;
+		background-color: 	 #fff;
+		box-shadow: 0px 4px 3px rgba(73, 73, 73, 0.21);
+		z-index: 1;
+		
+	}
+
+	#about .container .section-top .section-right .textfield2,
+	#about .container .section-top .section-right textarea{
+		width: 100%;
+		line-height: 40px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		border: 1px solid #141313;
+		padding-left: 5px;
+		outline: none;
+	}
+
+	#about .container .section-top .section-right button{
+		padding: 10px;
+		color: #fff;
+		background-color:#0E980B;
+		border-radius: 5px;
+		outline: 0px;
+	}
+
+	#about .container .section-bottom{
+		margin-top: 50px;
+		clear: both;
+	}
+
+	#about .container .section-bottom .section-info{
+		width: 100%;
+		margin-right: 0%;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	#about .container .section-bottom .section-info h4{
+		text-align:center;
+	}
+
+	#about .container .section-bottom .section-info p{
+		text-align:center;
+		font-size: 0.9em;
+	}
+	#about .container .section-bottom .last{
+		float:left;
+		margin-right: 0px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	#services{
+		clear: both;
+		background-image: url("../img/mobile-bckgrd.png");
+	}
+	
+	#services .container{
+		padding:50px 0%;
+	}
+
+	#services .container .section-info .products{
+		display: block;
+		width: 80%;
+		margin-right: 0px;
+		padding: 20px 0;		
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	#services .container .section-info .products img{
+		margin: 0 30%;
+	}
+
+	#services .container .section-info .second img,
+	#services .container .section-info  .third img,
+	#services .container .section-info .fourth img{
+		margin: 0 32%;
+	}
+
+	#services .container .section-info .products button{
+		margin: 0 30%;
+	}
+	
+	#component .container{
+		padding:50px 4%;
+	}
+
+	#component .container .section-bottom .section-left,
+	#component .container .section-bottom .section-center{
+		width: 100%;
+		display: block;
+	}
+
+	#component .container .section-bottom .section-right{
+		width: 100%;
+		display: block;
+		float: left;
+	}
+
+	#component .container .section-bottom .section-left .section-info h3,
+	#component .container .section-bottom .section-right .section-info h3{
+		font-size: 1em;
+		text-align:center;
+	}
+
+	#component .container .section-bottom .section-left .section-info h4,
+	#component .container .section-bottom .section-right .section-info h4{
+		font-size: 1em;
+		text-align:center;
+	}
+
+	#component .container .section-bottom .section-left .section-info p,
+	#component .container .section-bottom .section-right .section-info p{
+		font-size: 0.8em;
+		text-align:center;
+	}
+
+	#component .container .section-bottom .section-right .section-info p,
+	#component .container .section-bottom .section-right .section-info h4,
+	#component .container .section-bottom .section-right .section-info h3{
+		text-align:center;
+	}
+
+	#component .container .section-bottom .section-center img{
+		width: 80%;
+		padding: 0;
+		margin: auto;
+		top: 0px;
+		left: 0px;
+	}
+	
+	#offers .container{
+		clear: both;
+		padding:50px 3%;
+	}
+
+	#offers .container .section-top .section-left{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#offers .container .section-top .section-right{
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0px;
+	}
+
+	#offers .container .section-bottom .section-left{
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0px;
+	}
+
+	#offers .container .section-bottom .section-right{
+		display:block;
+		width: 80%;
+	}
+
+	#offers .container .section-bottom .section-left h4,
+	#offers .container .section-top .section-right h4{
+		text-align: center;
+	}
+
+	#offers .container .section-bottom .section-left p,
+	#offers .container .section-top .section-right p{		
+		width: 100%;
+		text-align: center;
+	}
+
+	#offers .container .section-bottom .section-left button,
+	#offers .container .section-top .section-right button{
+		margin: 0 35%;
+		margin-bottom: 20px;
+	}
+	
+	#offers .container .section-bottom .section-left img,
+	#offers .container .section-top .section-right img{	
+		margin: 0 35%;
+		margin-bottom: 30px;
+	}
+	
+	#offers .container .section-top .section-left img,
+	#offers .container .section-bottom .section-right img{
+		width: 100%;
+	}
+	
+	#offers .container .section-bottom .section-right img{
+		width: 100%;
+		margin: 0 9%;
+	}
+	
+	footer .container{
+		padding: 20px 0%;
+	}
+	
+	footer .container .vendor{
+		margin: 0 4%;
+		margin-bottom: 20px;
+	}
+	
+	footer .container .vendor img{
+		margin-right: 5%;
+	}
+
+	footer .container .contact .section .left{
+		display: block;
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 20px
+	}
+
+	footer .container .contact .section .afar{
+		float: center;
+	}
+
+	footer .container .contact .section .left h3{
+		padding-bottom: 10px;
+	}
+
+	footer .container .contact .section .left .section-details{
+		margin-bottom: 20px;
+	}
+	footer .container .contact .section .left .section-details img{
+		display: inline-block;		
+	}
+
+	footer .container .contact .section .left .section-details .info{
+		display: inline-block;
+		width: 80%;
+	}
+
+	footer .container .contact .section .center{
+		margin-left: 0%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	
+	footer .container .contact .section .right{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		clear: both;
+	}
+	
+	footer .container .contact .rights{
+		clear: both;
+	}
+	
+	header .container .hamburger{
+		display: inline-block;
+		float: right;
+	}
+	
+	header .container .hamburger img{
+		padding: 10px;
+		border: 1px solid #000;
+	}
+	
+	header .container .hamburger img:active,
+	header .container .hamburger img:hover{
+		border:1px solid #7e33ff;
+	}
+	
+	header .container .navbar{
+		display: none;
+	}
+	
+	header .container .nav {
+		padding-top: 50px;
+		height: 250px;
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		top: 60px;
+		left: 0;
+		background: rgba(253, 253, 255, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	header .container .nav li a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 1.2em;
+		color: #7e33ff;
+		display: block;
+		transition: 0.3s;
+		text-align: center;
+	}
+
+	#header .container .nav a:hover {
+		color: #4100b3;
+	}
+
+	#closebtn{
+		position: absolute;
+		top: 0px;
+		right: 75px;
+		font-size: 26px;
+		color: #7e33ff;
+		text-decoration: none;
+	}
+
+	#home {
+		transition: margin-top .5s;
+	}
+	
+	#navlink{
+		transition: display .8s;
+	}
+}

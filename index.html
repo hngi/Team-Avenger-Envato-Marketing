@@ -1,32 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+  <title>Pure</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Your Title Here</title>
 </head>
-
 <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<p>PURE</p>
+			</div>
+			<ul class="nav-links navbar">
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#features">ABOUT</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#pricing">CONTACT</a></li>				
+			</ul>
+			
+			<div class="hamburger">
+				<img src="./img/hamburger.svg" alt="hambuger" class="img-responsive" onclick="openNav()"/>
+			</div>
+			
+			<ul id="navlink" class="nav">
+				<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#features">ABOUT</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#pricing">CONTACT</a></li>				
+			</ul>
+		</div>
+	</header>
+	
+	<section id="home">
+		<div class="container">
+			<div class="section-left">
+				<div class="section-head">
+					<h3>WATER</h3>
+					<p>FEEL GOOD ALWAYS</p>
+				</div>
+				<div class="section-info">
+					<p>Our water is very healthy and neat always dehydrate yourself anywhere,
+					anytime with PURE table water.</p>
+				</div>			
+			</div>
+			<div class="section-right">
+				<img src="./img/bottle-water.png" alt="" class="img-responsive"/>
+			</div>
+		</div>
+	</section>
+	
+	<section id="about">
+		<div class="container">
+			<div class="section-top">
+				<div class="section-left">
+					<h3>Delivery Order form</h3>
+					<p>We are always on service 24hours, we make deliveries worldwide.Just fill in 
+					your details with your location, name, quantity you need and we will deliver to your
+					immediately to your door step.</p>				
+					<div class="contact">
+						<h4>Call Us Now</h4>
+						<p>+2381472552624</p>
+					</div>
+				</div>
+				<div class="section-right">
+					<form>
+						<input type="name" placeholder="Name.." class="textfield2"/><br>
+						<input type="email" placeholder="Email.." class="textfield2"/><br>
+						<input type="password" placeholder="Password.." class="textfield2"/><br>
+						<textarea cols="25" rows="5" placeholder="What you need....."> What you need...
+						</textarea><br>
+						<button type="submit"> SEND MESSAGE</button>
+					</form>
+				</div>
+			</div>
+			<div class="section-bottom">
+				<div class="section-info">
+					<h4>QUALITY CENTRIFICATES</h4>
+					<p>Our water are very centrified, verry good for consumption and very tasty free and good.</p>
+				</div>
+				<div class="section-info">
+					<h4>GOOD FOR HEALTH</h4>
+					<p>Our water is very good for your family's consumption, very good for consumption and very tasty.</p>
+				</div>
+				<div class="section-info last">
+					<h4>EALTHY COMPOSITION</h4>
+					<p>Our water is very good for your family's consumption, very good for consumption and very tasty.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="services">
+		<div class="container">
+			<div class="section-top">
+				<h3>Discover Our Products</h3>
+				<p>Take a look at some of our products.</p>
+			</div>
+			<div class="section-info first">
+				<div class="products">
+					<img src="./img/dispenser1.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+				<div class="products second">
+					<img src="./img/dispenser2.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+				<div class="products third">
+					<img src="./img/dispenser3.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+				<div class="products fourth">
+					<img src="./img/dispenser4.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+				<div class="products fifth">
+					<img src="./img/dispenser5.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+				<div class="products sixth">
+					<img src="./img/dispenser6.png" alt="dispenser" class="" alt=""/>
+					<h4>Big Dispenser</h4>
+					<button id="order"> N499.99</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="component">
+		<div class="container">
+			<div class="section-top">
+				<h3>Mineral Composition</h3>
+				<p> Some of the natural minerals used in producing this water</p>
+			</div>
+			<div class="section-bottom">
+				<div class="section-left">
+					<div class="section-info">
+						<h3>Calcuim (Ca)</h3>
+						<h4>6-12kg (100ml)</h4>
+						<p>Calcuim is a mineral that is used by muscles and skeleton it helps in developing
+						our bones, also helps our heart to beat. In water calcuim is the white residue you see
+						inside your kettle after boiling water.</p>
+					</div>
+					<div class="section-info">
+						<h3>Sulphate (SO4)</h3>
+						<h4>6-12kg (500mg/l)</h4>
+						<p>It is polyatomic ion wiith an empirical formula. Sulphate has a high concentration in
+						water, the level of sulphate in water is 500mg/l.</p>
+					</div>
+					<div class="section-info">
+						<h3>Nitrates (NO3)</h3>
+						<h4>6-12kg (100ml)</h4>
+						<p>Calcuim is a mineral that is used by muscles and skeleton it helps in developing
+						our bones, also helps our heart to beat. In water calcuim is the white residue you see
+						inside your kettle after boiling water.</p>
+					</div>
+				</div>
+				
+				<div class="section-center">
+					<img src="./img/inter.png" alt="middle-image" class="img-responsive"/>
+				</div>
+					
+				<div class="section-right">
+					<div class="section-info">
+						<h3>Calcuim (Ca)</h3>
+						<h4>6-12kg (100ml)</h4>
+						<p>Calcuim is a mineral that is used by muscles and skeleton it helps in developing
+						our bones, also helps our heart to beat. In water calcuim is the white residue you see
+						inside your kettle after boiling water.</p>
+					</div>
+					<div class="section-info">
+						<h3>Sulphate (SO4)</h3>
+						<h4>6-12kg (500mg/l)</h4>
+						<p>It is polyatomic ion wiith an empirical formula. Sulphate has a high concentration in
+						water, the level of sulphate in water is 500mg/l.</p>
+					</div>
+					<div class="section-info">
+						<h3>Nitrates (NO3)</h3>
+						<h4>6-12kg (100ml)</h4>
+						<p>Calcuim is a mineral that is used by muscles and skeleton it helps in developing
+						our bones, also helps our heart to beat. In water calcuim is the white residue you see
+						inside your kettle after boiling water.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="offers">
+		<div class="container">
+			<h3>Promo Offers</h3>
+			<div class="section-top">
+				<div class="section-left">
+					<img src="./img/product1.png" alt="product1" class="img-responsive"/>
+				</div>
+				<div class="section-right">
+					<h4>Bryce Canyon</h4>
+					<p>We are selling this water for lower price because of the promo going on now.</p>
+					<img src="./img/price-tag.png" alt="price-tag" class="img-responsive"/><br>
+					<button id="orderBtn"> Buy Now</button>
+				</div>
+			</div>
+			<div class="section-bottom">
+				<div class="section-left">
+					<h4>Bryce Canyon</h4>
+					<p>We are selling this water for lower price because of the promo going on now.</p>
+					<img src="./img/price-tag.png" alt="price-tag" class="img-responsive"/><br>
+					<button id="orderBtn"> Buy Now</button>
+				</div>
+				
+				<div class="section-right">
+					<img src="./img/product1.png" alt="product1" class="img-responsive"/>
+				</div>				
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="vendor">
+				<img src="./img/vendor 1.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 2.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 3.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 4.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 5.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 6.png" alt="vendor" class="img-responsive"/>
+				<img src="./img/vendor 7.png" alt="vendor" class="img-responsive"/>
+			</div>
+			
+			<div class="contact">
+				<div class="section">
+					<div class="left">
+						<h3>Pure</h3>
+						<div class="section-details">
+							<img alt="" src="./img/call-big.png" class="img-responsive"/>
+							<div class="info">
+								<h4>Contact</h4>
+								<p>08038337765</p>
+								<p>08038337765</p>
+							</div>
+						</div>
+						<div class="section-details">
+							<img alt="" src="./img/location.png" class="img-responsive"/>
+							<div class="info">
+								<h4>Address</h4>
+								<p>No 30 igwui Rd Gariki, Enugu State, Nigeria.</p>							
+							</div>
+						</div>
+					</div>
+					<div class="center middle">
+						<h3>ABOUT US</h3>
+						<ul class="details">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Customer Services</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Patners</a></li>
+						</ul>
+					</div>
+					
+					<div class="right afar">
+						<h3>ABOUT US</h3>
+						<ul class="details">
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Cookies</a></li>
+							<li><a href="#">Copyright</a></li>
+						</ul>
+						<div class="img-section">
+							<img alt="message" class="img-responsive" src="./img/message.png"/>
+							<img alt="facebook" class="img-responsive" src="./img/facebook.png"/>
+							<img alt="phone" class="img-responsive" src="./img/phone.png"/>
+							<img alt="twitter" class="img-responsive" src="./img/twitter.png"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="rights">All rights reserved, Inc pure.</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="scripts/script.js"></script>
 </body>
-
 </html>
+
