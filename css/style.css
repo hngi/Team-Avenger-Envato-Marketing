@@ -82,6 +82,16 @@ body {
 	font-weight: 700;
 	font-size: 5rem;
 }
+
+.client-custom .whole {
+	/* border: 3px solid black; */
+	max-height: 40%;
+	/* height: 100%; */
+}
+
+.client-custom .pink-border {
+	border-right: 3px solid #f50057;
+}
 /* Our services */
 .card-img-top {
 	width: 5rem;
