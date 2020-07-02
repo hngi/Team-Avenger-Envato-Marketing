@@ -538,6 +538,18 @@ footer .input-group .input-group-append img {
     letter-spacing: -4px;
 }
 
+.call-to-action-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.call-to-action-container .container {
+    position: relative
+}
+
 .call-to-action {
     position: absolute;
     left: 25%;
@@ -545,6 +557,7 @@ footer .input-group .input-group-append img {
     flex-direction: row-reverse;
     width: 50%;
     justify-content: space-around;
+    bottom: 8px;
     text-transform: uppercase;
 }
 
@@ -560,6 +573,9 @@ button.button.bordered {
     text-transform: uppercase;
 }
 
+section.first-section {
+    position: relative;
+}
 
 section.first-section .offer {
     position: absolute;
@@ -579,7 +595,6 @@ section.first-section .offer {
         left: 50%;
         width: 50%;
         bottom: 200px;
-        padding-right: 100px;
     }
 
     .call-to-action button.button {
