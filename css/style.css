@@ -779,6 +779,7 @@ section.first-section .offer {
         height: 100vh;
         margin-top: 0;
         font-size: 20px;
+        position: relative;
         /* background-position-y: 0; */
     }
 
