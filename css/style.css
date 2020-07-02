@@ -561,6 +561,15 @@ button.button.bordered {
     text-transform: uppercase;
 }
 
+
+section.first-section .offer {
+    position: absolute;
+    height: 201px;
+    width: 201px;
+    bottom: 80px;
+    left: 80px;
+}
+
 @media screen and (min-width: 992px) {
     section.first-section >.container {
         position: relative;
