@@ -59,13 +59,17 @@
     z-index: 1500;
 }
 
+.us h1{font-size: 28px;}
+
 #section1 h1 {
-    font-style: normal;
+        font-style: normal;
     text-align: center;
     font-weight: bold;
     font-size: 3.688rem;
-     line-height: 4rem; 
+    line-height: 6rem;
     color: #1C1B1E;
+    margin-left: 5%;
+    width: 90%;
 }
 #section1 p{
 	/*color: #F34A00;*/
@@ -83,6 +87,7 @@
     margin-top: 10% !important;
     /* justify-items: center; */
     width: 74% !important;
+    height: 13vh;
     color: #1C1B1E;
     align-items: center;
     margin-bottom: 15% !important;
@@ -190,6 +195,10 @@
     /*margin-top: 100px;*/
 }
 
+.section-title2{
+    text-align: center !important;
+}
+
 .service{
    font-size: 2.2rem;
     padding: 0px !important;
@@ -197,8 +206,27 @@
     text-align: center;
 }
 
-.service p, .service a{
+.service p{
 	font-size: 21px;
+}
+
+.service a{
+    font-size: 21px;
+}
+
+.timeline {
+    width: 80%;
+    margin: 0% auto;
+}
+
+.responsive-img {
+     margin-top: 0%; 
+}
+
+.flex button {
+    border-radius: 0px !important;
+    /* width: 50%; */
+    height: auto;
 }
 
 #text {
@@ -279,12 +307,20 @@
     .card::before{
     content: url(img/quote.png);
     width: 100px;
-    margin-left: 80%;
+    margin-left: 67%;
     margin-top: -8%;
+}
+
+.carousel-item{
+    margin-left: 30px !important;
 }
 
 .review img{
     width: 50%;
+}
+
+textarea{
+    width:80% !important;
 }
 
 .flex{

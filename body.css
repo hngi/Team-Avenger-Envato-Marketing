@@ -263,10 +263,16 @@ color: #F34A00;
 }
 
 .timeline-wrapper {
-    margin-left: 18.5rem;
+	margin-left: 18.5rem;
     margin-top: 6rem;
     border-left: 2px solid #2B5DCD;
     width: 50%;
+    height: 100vh;
+    margin-bottom: 25%;
+}
+
+.why{
+	display: block;
 }
 .node {
   padding-left: 4rem;
