@@ -1,3 +1,11 @@
+.backrec{
+    position: absolute;
+    width: 1053px;
+    height: 540px;
+    left: 2px;
+    top: -5px;
+    z-index: -1;
+}
 .two{
     background-color: #4057F3;
 }
@@ -13,26 +21,27 @@
 .four{
     background-color: #4057F3;
 }
-.five ul{
-    list-style: none;
-    color: black;
-}
 .buttonIn { 
     /*width: 300px; 
     position: relative; */
 } 
 #enter{ 
-    margin: 0px; 
+    /*margin-left: 50px;*/ 
     padding: 0px; 
     width: 100%; 
     outline: none; 
     height: 50px; 
     border-radius: 5px; 
+    font-size: 10px;
+    font-weight: 5px;
+    margin-left: auto;
+    margin-right: auto;
 } 
 #clear{ 
     position: absolute;
     border-radius: 5px; 
-    right: 54px; 
+    /*left: 235px;*/
+    right: 55px;
     z-index: 2; 
     border: none; 
     top: 53px; 
@@ -41,6 +50,8 @@
     color: white; 
     background-color: #4057F3; 
     transform: translateX(2px); 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px){
@@ -65,30 +76,59 @@
         position: absolute;
         left: 45px;
     }
-    .quote{
-        z-index: 1;
-        right: 100px;
-        top: 40px;
+    .tes{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
     }
-    .block_quote{
-        width: 200px;
-        border-color: black;
-        border-radius: 5px;
+    .quote{
         position: absolute;
-        background-color: white;
-        top: 200px;
-        right: 50px;
+        z-index: 2;
+        top: 140px;
+        left: 190px;
+    }
+    .quote1{
+        top: 180px;
+        left: 130px;
         padding: 5px;
         z-index: 1;
         text-align: left;
-        font-size: 9px;
-    }
+        padding: 5;
+        font-size: 12px;
+        position: absolute;
+        width: 280px;
+        height: 140px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
     .qus{
-        color:white;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
     }
-    .ftt{
-        text-align: center;
+    .smfoot{
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 5fr);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .smfoot ul{
+        list-style: none;
+        line-height: 30px;
+        padding-right: 15px;
+    }
+    .smfoot a{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .bud{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (min-width: 769px){
@@ -105,23 +145,64 @@
     }
     .quote{
         position: absolute;
-        z-index: 1;
-        top: 200px;
-        left:0px;
+        z-index: 2;
+        top: 250px;
+        left: 60px;
     }
-    .block_quote{
-        width: 400px;
-        border-color: black;
-        border-radius: 10px;
-        position: absolute;
-        background-color: white;
-        top: 230px;
-        right: 300px;
+    .quote1{
+        top: 290px;
+        left: 30px;
         padding: 5px;
         z-index: 1;
+        text-align: left;
+        padding: 5;
+        font-size: 12px;
+        position: absolute;
+        width: 280px;
+        height: 140px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
     .qus{
         color:white;
         text-align: left;
+    }
+    .five ul{
+        list-style: none;
+        line-height: 30px;
+    }
+    .five a{
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+@media (max-width:550px){
+    .quote{
+        position: absolute;
+        z-index: 2;
+        top: 130px;
+        left: 50px;
+    }
+    .quote1{
+        top: 180px;
+        left: 10px;
+        padding: 5px;
+        z-index: 1;
+        text-align: left;
+        padding: 5;
+        font-size: 12px;
+        position: absolute;
+        width: 260px;
+        height: 120px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
