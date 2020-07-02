@@ -32,8 +32,9 @@ section {
 /* Header */
 header {
     width: 100%;
-    background-image: url(../img/banner.png);
+    background-image: url(../img/big.png);
     background-position: center;
+    background-size: cover;
     min-height: 500px;
     display: grid;
     grid-template-columns: 1fr;
@@ -254,15 +255,16 @@ header {
 .service {
     margin: 2rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .service-card {
-    width: 15rem;
+    width: 400px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: .5rem;
 }
 
 .service-card h6 {
@@ -297,13 +299,13 @@ header {
 .project {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .project-card {
-    width: 350px;
+    width: 400px;
     height: 300px;
-    margin-right: .2rem;
+    margin-right: .5rem;
 }
 
 .card-image {
@@ -339,7 +341,7 @@ header {
 /* Gallery */
 
 .gallery {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -349,13 +351,13 @@ header {
 
 .gallery-images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 200px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
     grid-gap: .5rem;
     justify-content: center;
 }
 
 .gallery-image {
-    width: 200px;
+    width: 300px;
 }
 
 .gallery-images img {
@@ -519,8 +521,11 @@ footer>p {
         width: 1440px;
     }
     header {
-        width: 1440px;
+        width: 100%;
         margin: 0 auto;
+    }
+    #header-text {
+        width: 1440px;
     }
     #logo {
         margin-left: 1rem;
@@ -529,10 +534,10 @@ footer>p {
         width: 1440px;
     }
     .services {
-        width: 1440px;
+        width: 100%;
     }
     .grey {
-        width: 1440px;
+        width: 100%;
         margin: 0 auto;
     }
     .projects {
@@ -546,6 +551,13 @@ footer>p {
         width: 1440px;
     }
     .dark-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+        width: 1440px;
+    }
+    .gallery-images {
         width: 1440px;
         margin: 0 auto;
     }
