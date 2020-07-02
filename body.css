@@ -264,16 +264,17 @@ color: #F34A00;
 
 .timeline-wrapper {
 	margin-left: 18.5rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
     border-left: 2px solid #2B5DCD;
     width: 50%;
-    height: 100vh;
-    margin-bottom: 25%;
+    height: 60vh;
+    margin-bottom: 30%;
 }
 
-.why{
-	display: block;
+.timeline-wrapper:nth-last-child{
+ border-left: none;
 }
+
 .node {
   padding-left: 4rem;
   padding-bottom: 1.5rem;
@@ -287,7 +288,7 @@ color: #F34A00;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 37px;
+    line-height: 28px;
 }
 
 .node p{
@@ -300,10 +301,11 @@ color: #F34A00;
 
 }
 
-.node::before {
+.node::before {/*
 	counter-reset: step;
-    content: counter(step);
-    counter-increment: step;
+	counter-increment: step;
+    content: counter(step);*/
+    content:'*';
     width: 51px;
     position: absolute;
     height: 51px;
@@ -314,15 +316,13 @@ color: #F34A00;
     left: -2.5rem;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
     margin-right: 20%;
+    margin-top: -21px;
     text-align: center;
-    line-height: 5rem;
-    font-size: 18px;
+    line-height: 8rem;
+    font-size: 36px;
     font-weight: 500;
 }
 
-.timeline-wrapper:nth-child{
- border: none;
-}
 
     .grid-pic{
     height: 378px;
