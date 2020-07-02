@@ -176,7 +176,7 @@ header {
 .bar {
     width: 100%;
     height: .2rem;
-    background-color: #000;
+    background-color: #fff;
 }
 
 /* Mobile menu slide */
@@ -462,9 +462,6 @@ footer>p {
     }
     #hamburger {
         display: block;
-    }
-    #mobile {
-        background-color: #fff;
     }
     .service {
         flex-direction: column;
