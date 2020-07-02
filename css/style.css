@@ -70,6 +70,7 @@ body {
 .header-column .btn-demo:hover {
 	outline: none;
 }
+
 /* client container */
 .client-custom {
 	background-image: url('../images/Rectangle\ 2.png');
@@ -109,6 +110,7 @@ body {
 .card-title {
 	color: #f50057;
 }
+
 /* Team */
 .our-team {
 	background: linear-gradient(
@@ -125,6 +127,25 @@ body {
 	border-radius: 50%;
 	width: auto;
 }
+
+.testimonials .title {
+	color: #f50057;
+}
+
+.testimonials .testimonial-box {
+	position: relative;
+}
+
+.testimonials .quote {
+	position: absolute;
+	top: 0;
+	left: 80px;
+}
+
+.testimonial-box h5 {
+	color: #000000;
+}
+
 /* foooter */
 footer {
 	background: linear-gradient(
