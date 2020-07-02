@@ -263,11 +263,18 @@ color: #F34A00;
 }
 
 .timeline-wrapper {
-    margin-left: 18.5rem;
-    margin-top: 6rem;
+	margin-left: 18.5rem;
+    margin-top: 8rem;
     border-left: 2px solid #2B5DCD;
     width: 50%;
+    height: 60vh;
+    margin-bottom: 30%;
 }
+
+.timeline-wrapper:nth-last-child{
+ border-left: none;
+}
+
 .node {
   padding-left: 4rem;
   padding-bottom: 1.5rem;
@@ -281,7 +288,7 @@ color: #F34A00;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 37px;
+    line-height: 28px;
 }
 
 .node p{
@@ -294,10 +301,11 @@ color: #F34A00;
 
 }
 
-.node::before {
+.node::before {/*
 	counter-reset: step;
-    content: counter(step);
-    counter-increment: step;
+	counter-increment: step;
+    content: counter(step);*/
+    content:'*';
     width: 51px;
     position: absolute;
     height: 51px;
@@ -308,15 +316,13 @@ color: #F34A00;
     left: -2.5rem;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
     margin-right: 20%;
+    margin-top: -21px;
     text-align: center;
-    line-height: 5rem;
-    font-size: 18px;
+    line-height: 8rem;
+    font-size: 36px;
     font-weight: 500;
 }
 
-.timeline-wrapper:nth-child{
- border: none;
-}
 
     .grid-pic{
     height: 378px;
@@ -432,6 +438,11 @@ color: #1C1B1E;
 	cursor: pointer;
 }
 
+.carousel-control-prev-icon {
+    background-color: #;
+    border-radius: 50%;
+}
+
 .flex button{
 	border-radius: 0px !important;
 	/*width:50%;*/
@@ -448,6 +459,28 @@ color: #1C1B1E;
     width:100% !important;
     margin-left: 25px !important;
 }
+
+	.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 9% 4%;
+    background-color: #2B5DCD;
+    z-index: 5000;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    width: 18%;
+    color: #000;
+    text-align: center;
+    /* opacity: .5; */
+    /* transition: opacity .15s ease; */
+    margin: 0px 55% 0% 4%;
+}
+
 .cell-right {
     text-align: center;
     margin-right: 80px;

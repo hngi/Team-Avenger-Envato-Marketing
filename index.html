@@ -202,7 +202,7 @@
           </div>
       </div>
       </div>
-      <div class="col-md-6 mt-5 hidden" style="display: block !important;">
+      <div class="col-md-6 mt-5">
         <div class="section-title2 mt-5">
                 <p>WHY CHOOSE US ?</p>
               </div><br>
@@ -211,30 +211,10 @@
               </div> <br>
               <div class="details">
               <p id="text"  style="margin-top: 5%;">We believe in steadfast opportunities for your company and getting things done promptly is something we cannot over emphasize. Lead generation and company follow up is well preached in our arsenal</p>
-              <button class="btn btn-dark" href="#">Contact Us</button>
+              <button class="btn btn-dark hidden" href="#">Contact Us</button>
               </div><br>
             </div>
-            <div class="col-md-12">
-          <h2></h2>
-        </div>
-        
-      </div>
-  
-</div>
-<div class="container-fluid text-center">
-<div class="col-md-6 mt-5 show text-center">
-        <div class="section-title2 mt-5">
-                <p>WHY CHOOSE US ?</p>
-              </div>
-              <div class="experiences">
-                <h1>Experienced Helpful and Local.</h1>
-              </div> 
-              <div class="details">
-              <p id="text"  style="margin-top: 5%;">We believe in steadfast opportunities for your company and getting things done promptly is something we cannot over emphasize. Lead generation and company follow up is well preached in our arsenal</p>
-             
-              </div>
-            </div>
-            <div class="col-sm-12 show">
+             <div class="col-sm-12 show">
         <div class="timeline text-center">
             <div class="node-wrraper">
               <h3>25+ Years Experience</h3>
@@ -252,7 +232,13 @@
           <button class="btn btn-dark" href="#">Contact Us</button>
       </div>
        
+        
+      </div>
+  
 </div>
+<!-- <div class="container-fluid text-center">
+           
+</div> -->
 
 </section>  
 
@@ -359,16 +345,24 @@
                 <a class="sub-title">Over 1000+ clients. are you the next one?</a>
             </div>
       <div class="col-md-4 flex-box hidden">
-        <img src="img/Group9.png" href="#cards">
-        <img src="img/Group10.png" href="#cards">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+        <!-- <img src="img/Group9.png" href="#carouselExampleControls">
+        <img src="img/Group10.png" href="#carouselExampleControls"> -->
       </div>
     </div>
     </div>
   </div>
     <div class="container text-center hidden">
           <div class="row">
-            <div class="carouselExampleControls carousel slide w-100" id="cards" data-ride="carousel">
-              <div class="carousel-inner w-100" role="listbox">
+            <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100"  id="cards" role="listbox">
                 <div class="carousel-item active">
                   <div class="col-md-4 card">
                     <div class="col-md-6 test-img">
@@ -502,7 +496,7 @@
                     <p style="font-size: 24px; line-height:7rem; text-decoration: underline;">hello@icontact.com</p>
             </div>
     <div class="col-md-6">
-      <form method="post" onsubmit="return validateStudentForm()" name="studentForm" id="student-detail">
+      <form method="post" name="form" id="person-detail">
           <div class="row">
             <div class="col-sm-12">
               <div class="col-sm-6">
@@ -542,7 +536,7 @@
                     <label for="address">Message(optional)</label>
                     </div>
                         <div class="col-md-12">
-                           <textarea type="text" class="w-100" cols="24" rows="1" name="address" placeholder="Enter Message"></textarea>
+                           <textarea type="text" cols="50" rows="1" name="address" placeholder="Enter Message"></textarea>
                     </div>
                 </div>     
                 <div class="row">
@@ -550,7 +544,7 @@
                   <div class="col-sm-7 mr-5">
                     <input type="checkbox" name="" class="mr-2" style="line-height: 2rem;margin-left: 10%;float: left"><a style="line-height: 2rem;margin-left: 20%;float: left;margin-top: -7%;">By clicking submit, you agree to our Terms and conditions</a>
                   </div>
-                  <div class="col-sm-3 ml-5">
+                  <div class="col-sm-3">
                     <button type = "submit" class="btn btn-dark">Submit</button>        
                   </div>
                 </div>
