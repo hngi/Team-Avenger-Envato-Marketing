@@ -28,14 +28,6 @@ body {
 
 /* header */
 .jumbotron-custom {
-	/* background-color: linear-gradient(
-		127deg,
-		rgb(245, 0, 87) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	background-image: url('../images/header-image.png');
-	background: #eb01a5; */
-	/* background-image: url("../images/header-image.png"); fallback */
 	background-image: url('../images/header-image.png'),
 		linear-gradient(127deg, rgb(245, 0, 87) 0%, rgba(255, 255, 255, 0) 100%); /* W3C */
 	background-repeat: no-repeat;
@@ -79,6 +71,7 @@ body {
 	background-size: 100% 100%;
 	font-size: 1.5rem;
 }
+
 .client-custom .numbers {
 	color: #f50057;
 	font-weight: 700;
@@ -118,8 +111,39 @@ body {
 			#f50057 34.75%,
 			rgba(255, 255, 255, 0) 133.88%
 		),
-		rgba(245, 0, 87, 0.75);
+		rgba(131, 63, 87, 0.75);
 	color: #ffffff;
+}
+
+/* .our-team-container {
+	position: relative;
+} */
+.our-team-img {
+	position: relative;
+}
+
+.overlay {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.our-team-container:hover .our-team-img {
+	opacity: 0.3;
+}
+
+.our-team-container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	/* font-size: 16px; */
 }
 
 /* testimonials */
@@ -156,10 +180,6 @@ footer {
 		rgba(245, 0, 87, 0.75);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	color: #ffffff;
-}
-
-footer .logo-copyright {
-	/* width: fit-content; */
 }
 
 footer .copyright {
