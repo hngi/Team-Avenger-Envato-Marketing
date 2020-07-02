@@ -2,31 +2,474 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- FONT AWESOME CDN LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Your Title Here</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>SalesBoost </title>
 </head>
 
-<body>
-    <h1>Hello, world!</h1>
+<body id="home">
+  <nav class="navbar navbar-expand-lg navbar-dark defaultBg ">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.svg" alt="SalesBoost Logo" class="logo">
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active-nav mr-4">
+          <a class="nav-link font18pxbold" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link font18pxbold" href="#about">About</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link font18pxbold" href="#our-approach">Our Approach</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link font18pxbold" href="#services">Services</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link font18pxbold" href="#reviews">Reviews</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link font18pxbold" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero px-0">
+    <div class="hero-body text-light px-4">
+      <h1 class="lg-heading">
+        Boost Your Sales By
+        <span>Up To %500%</span>
+      </h1>
+      <p class="paragraph-bold mt-5">
+        we provide you with the education, resources and tools necessary to get your business visible to customers
+        who’ll buy your products instantly without blinking
+      </p>
+      <button class="btn btn-lg default-btn mt-5">
+        Get Access Now
+      </button>
+    </div>
+  </section>
+  <section class="about px-4" id="about">
+    <div class="about-img">
+      <img src="images/about-img.png" alt="Woman Chatting With Client">
+    </div>
+    <div class="about-text">
+      <p class="paragraph-bold-blue">WHO WE ARE</p>
+      <h2 class="md-heading">About Us</h2>
+      <p class="paragraph-bold mt-5">
+        we are a digital marketing agency with focus on driving tremendous brand growth by helping our clients obtain
+        and retain
+        their customers by applying never-seen-before marketing strategies that works like magic.
+        Our marketing strategy is so unique that your customers will literally beg you to take thier money, it’s that
+        effective!
+      </p>
+      <div class="about-revenues mt-5">
+        <span>
+          <img src="images/clients.png" alt="Client Revenue">
+          <span>100+ <span class="d-block">Clients</span></span>
+        </span>
+        <span>
+          <img src="images/adreach.png" alt="Ad Revenue">
+          <span>300M+ <span class="d-block">Ad Reach</span></span>
+        </span>
+        <span>
+          <img src="images/revenue.png" alt="Revenue Generated">
+          <span>100M+ <span class="d-block">Revenue</span></span>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section class="approach px-4 defaultBg py-5 text-center" id="our-approach">
+    <div class="approach-heading">
+      <p class="paragraph-bold-blue">OUR APPROACH</p>
+      <h2 class="md-heading text-light">How We Work</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="approach-body mt-5 text-light">
+      <div class="approach-body-discuss">
+        <img src="images/1.svg" alt="One">
+        <h3 class="xm-heading mt-3">Meet & Discuss</h3>
+        <p class="paragraph-bold">
+          Our first step to delivering is to meet with our clients and discuss their busniess needs.
+        </p>
+      </div>
+      <div class="approach-body-dev">
+        <img src="images/2.svg" alt="Two">
+        <h3 class="xm-heading mt-3">Strategy Development</h3>
+        <p class="paragraph-bold">
+          Based on client needs, we then proceed to develop the right marketing strategies for the business.
+        </p>
+      </div>
+      <div class="approach-body-imp">
+        <img src="images/3.svg" alt="Three">
+        <h3 class="xm-heading mt-3">Strategy Implementation</h3>
+        <p class="paragraph-bold">
+          The final step is to implement the developed startegies and evaluate the results.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="services px-4 py-5 text-center" id="services">
+    <div class="services-heading">
+      <p class="paragraph-bold-blue">WHAT WE DO</p>
+      <h2 class="md-heading">Our Services</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="services-body">
+      <div class="services-body-marketing">
+        <span class="border-circle">
+          <img src="images/graph.png" alt="Graph Icon">
+        </span>
+        <h3 class="xm-heading mt-4">Digital Marketing</h3>
+        <p class="paragraph-bold">
+          we offer effective digital marketing solutions, including but not limited to social media ad campaigns, brand
+          recognition campaigns, e.t.c.
+        </p>
+      </div>
+      <div class="services-body-email">
+        <span class="border-circle">
+          <img src="images/ampersand.png" alt="Ampersand Icon">
+        </span>
+        <h3 class="xm-heading mt-4">Email Marketing</h3>
+        <p class="paragraph-bold">
+          we offer effective email-marketing solutions, including but not limited to social media ad campaigns, brand
+          recognition campaigns, e.t.c.
+        </p>
+      </div>
+      <div class="services-body-copywrighting">
+        <span class="border-circle">
+          <img src="images/bar.png" alt="Bar Icon">
+        </span>
+        <h3 class="xm-heading mt-4">Copywriting</h3>
+        <p class="paragraph-bold">
+          we offer dynamic direct-response marketing and copywriting services that converts potential customers to
+          lifelong fans
+          of your business.
+        </p>
+      </div>
+      <div class="services-body-seo">
+        <span class="border-circle">
+          <img src="images/cube.png" alt="Cube Icon">
+        </span>
+        <h3 class="xm-heading mt-4">Search Engine Optimization</h3>
+        <p class="paragraph-bold">
+          we offer effective digital marketing solutions, including but not limited to social media ad campaigns, brand
+          recognition campaigns, e.t.c.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="brands px-4 py-5 text-center">
+    <div class="brands-heading">
+      <p class="paragraph-bold-blue">TRUSTED BRANDS</p>
+      <h2 class="md-heading">Our Partners</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="brands-body mt-5">
+      <div class="group-1">
+        <img src="images/Quickteller.svg" alt="Quickteller Logo">
+        <img src="images/PiggyVest.svg" alt="PiggyVest Logo">
+        <img src="images/Hotels.ng.svg" alt="Hotels.ng Logo">
+      </div>
+      <div class="group-2">
+        <img src="images/Konga.svg" alt="Konga Logo">
+        <img src="images/Cowrywise.svg" alt="Cowrywise Logo">
+        <img src="images/kuda.svg" alt="Kuda Logo">
+      </div>
+      <div class="group-3">
+        <img src="images/Flutterwave.svg" alt="Flutterwave Logo">
+        <img src="images/Interswitch.svg" alt="Interswitch Logo">
+        <img src="images/Barter.svg" alt="Barter Logo">
+      </div>
+      <div class="group-4">
+        <img src="images/Verve.svg" alt="Verve Logo">
+        <img src="images/Nairabet.svg" alt="Nairabet Logo">
+        <img src="images/Andela.svg" alt="Andela Logo">
+        <img src="images/Verifi.svg" alt="Verifi Logo">
+      </div>
+    </div>
+  </section>
+  <section class="testimonial px-5 py-5 text-center defaultBg" id="reviews">
+    <div class="services-heading">
+      <p class="paragraph-bold-blue">WHAT OUR CLIENTS SAY</p>
+      <h2 class="md-heading text-light">Testimonial</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="tesimonial-body text-light mt-5 px-3">
+      <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-lg-4 col-md-6">
+              <div class="review__testimonial">
+                <div class="testimonial__text">
+                  <span class="quote-top">
+                    <img src="images/quote-top.png" alt="quote">
+                  </span>
+                  <p class="paragraph-bold">
+                    Our marketing team was only trained for two weeks and the number of conversions they made after the
+                    training was simply
+                    unbelievable.
+                  </p>
+                  <span class="quote-bottom">
+                    <img src="images/quote-bottom.png" alt="quote">
+                  </span>
+                </div>
+                <figure class="testimonial__shape">
+                  <img src="images/client.png" alt="Client" class="rounded-circle">
+                  <span class="d-block testimonial__name">Mark Essie
+                    <b class="d-block">
+                      CEO of Hotels.ng
+                    </b>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prev-next">
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span aria-hidden="true"> &larr;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span aria-hidden="true"> &rarr; </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+  </section>
+  <section class="contact px-5 py-4 mt-3" id="contact">
+    <div class="contact-heading text-center">
+      <p class="paragraph-bold-blue">WHAT OUR CLIENTS SAY</p>
+      <h2 class="md-heading">Testimonial</h2>
+      <hr class="border-bottom">
+    </div>
+    <div class="contact-body mt-5">
+      <div class="send-message">
+        <h4>Get A Quote</h4>
+        <form action="" id="sendmessage">
+          <div class="form-group mb-5">
+            <input type="text" name="Name" id="message-name" required placeholder="Name">
+          </div>
+          <div class="form-group mb-5">
+            <input type="text" name="Email" id="email" required placeholder="Email">
+          </div>
+          <div class="form-group mb-5">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+          <button class="btn-lg default-btn btn w-100">Send Message</button>
+        </form>
+      </div>
+      <div class="middle">
+        <h4>OR</h4>
+      </div>
+      <div class="appointment">
+        <h4>Book an Appointment</h4>
+        <form action="" id="appointment">
+          <div class="form-group mb-5">
+            <input type="text" name="Name" id="name" required placeholder="Name">
+          </div>
+          <div class="form-group mb-5">
+            <input type="date" name="date" id="date">
+          </div>
+          <div class="form-group mb-5">
+            <input type="time" name="time" id="time">
+          </div>
+          <button class="btn-lg default-btn btn w-100">Schedule Appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="footer-container py-4 mt-3 defaultBg">
+    <footer class="footer text-light">
+      <address>
+        <img src="images/logo.svg" alt="Logo" class="logo">
+        <ul class="footer-address">
+          <li>
+            <img src="images/direction.png" alt="Direction Icon">
+            30 Chevron drive, Lekki, Lagos.
+          </li>
+          <li>
+            <img src="images/call.png" alt="Phone Icon">
+            019321672, 08027060872
+          </li>
+        </ul>
+        <ul class="footer-social mt-5">
+          <li>
+            <a href="#facebook" target="_blank" rel="noopener noreferrer">
+              <img src="images/fb.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#twitter" target="_blank" rel="noopener noreferrer">
+              <img src="images/twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#instagram" target="_blank" rel="noopener noreferrer">
+              <img src="images/ig.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#linkedin" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin.png" alt="Linkedin">
+            </a>
+          </li>
+        </ul>
+      </address>
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a class="active" href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#our-approach">Approach</a>
+          </li>
+          <li>
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="active" href="#">Discover</a>
+          </li>
+          <li>
+            <a href="#">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of service</a>
+          </li>
+          <li>
+            <a href="#">Cookies policy</a>
+          </li>
+          <li>
+            <a href="#">Legal</a>
+          </li>
+          <li>
+            <a href="#">Consulting</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-subscribe">
+        <h6 class="active">Subscribe</h6>
+        <form action="" id="subscribe">
+          <div class="form-group">
+            <input type="email" name="email" id="subscribe-email" placeholder="email" required>
+          </div>
+          <button class="btn default-btn btn-lg w-100">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+    <div class="footer-copyright text-center text-light">
+      <small>&copy;2020. All Rights Reserved</small>
+    </div>
+    <div class="go-up">
+      <a href="#home">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 
 </html>
