@@ -562,11 +562,15 @@ button.button.bordered {
 }
 
 @media screen and (min-width: 992px) {
+    section.first-section >.container {
+        position: relative;
+    }
     .call-to-action {
         flex-direction: row;
         left: 50%;
         width: 50%;
-        bottom: 1%;
+        bottom: 80px;
+        padding-right: 0;
     }
 
     .call-to-action button.button {
