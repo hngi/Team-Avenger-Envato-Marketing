@@ -585,7 +585,15 @@ section.first-section .offer {
     left: 80px;
 }
 
+.navbar-nav.container{
+    align-items: flex-start;
+}
+
 @media screen and (min-width: 992px) {
+    .navbar-nav.container{
+        align-items: center;
+    }
+    
     section.first-section>.container {
         position: relative;
     }
