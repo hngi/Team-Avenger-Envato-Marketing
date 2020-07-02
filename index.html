@@ -44,7 +44,7 @@
         <nav class="navbar navbar-expand-lg menu">
             <div class="collapse navbar-collapse navbar-collapse-target menu">
                 <div class="nav-menu">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav container">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -88,13 +88,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="call-to-action">
-                    <button class="button bordered">
-                        details
-                    </button>
-                    <button class="button">
-                        Add to cart
-                    </button>
+            </div>
+            <div class="call-to-action-container">
+                <div class="container">
+                    <div class="call-to-action">
+                        <button class="button bordered">
+                            details
+                        </button>
+                        <button class="button">
+                            Add to cart
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="offer d-none d-lg-block">
@@ -240,12 +244,12 @@
             </div>
         </section>
         <section class="container-fluid exclusive jumbotron">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex container justify-content-center align-items-center">
                 <div class="big-caption text-center">Exclusive Hot Deals End <br />Soon!</div>
                 <div class="little-caption text-center">You do not want to miss out.</div>
                 <div class="countdown row">
                     <div class="col-3 text-center justify-content-center">
-                        <div class="display-number">
+                        <div class="display-number" id="days">
                             30
                         </div>
                         <div class="display-type">
@@ -253,7 +257,7 @@
                         </div>
                     </div>
                     <div class="col-3 text-center justify-content-center">
-                        <div class="display-number">
+                        <div class="display-number" id="hours">
                             21
                         </div>
                         <div class="display-type">
@@ -261,7 +265,7 @@
                         </div>
                     </div>
                     <div class="col-3 text-center justify-content-center">
-                        <div class="display-number">
+                        <div class="display-number" id="mins">
                             10
                         </div>
                         <div class="display-type">
@@ -269,7 +273,7 @@
                         </div>
                     </div>
                     <div class="col-3 text-center justify-content-center">
-                        <div class="display-number">
+                        <div class="display-number" id="secs">
                             30
                         </div>
                         <div class="display-type">
