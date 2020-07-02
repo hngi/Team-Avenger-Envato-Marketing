@@ -1,0 +1,183 @@
+/* Style the body */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+    background: #FFFFFF; 
+    
+    }
+/* Brand/Logo Style */
+.navbar_brand {
+    overflow: visible;
+    z-index: 1;
+    height: 120px;
+    left: 120px;
+}
+
+/* Header Content Style */
+.header_content {
+    background-color: #FFFFFF;
+    height: 1100px;
+    
+    
+}
+
+.text1 {
+    color:#020E35; 
+    font-size:70px; 
+    font-weight:bold;
+    font-style:normal;
+    margin-top:120px;
+    margin-right: -100px;
+    line-height:100px;
+    z-index: 9999;
+}
+
+
+.header_content .btn {
+    background-color:#FF4F5A
+}
+.img1 {
+    max-width: 100%;
+    padding: 0px;
+    margin-left: -120px;
+    width: 100%;
+}
+
+/* Oval Style */
+
+.oval {
+    position: absolute;
+    width: 276px;
+    height: 276px;
+    left: -141px;
+    top: 722px;
+    background: #F0F3FA;
+    border-radius: 300px;
+}
+/* About Us Style */
+.aboutus {
+    text-decoration: underline;
+    text-decoration-color: #FF4F5A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 90px;
+    color: #020E35;
+}
+
+.textsub1 {
+    line-height: 20px;
+    text-align: justify;
+    
+}
+/* Three Column Grid Style */
+.gridtext {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+.grid_row {
+    justify-content: center;
+}
+
+
+/* Main Style */
+.main {
+    background-color: #020E35;
+    height: 2600px;
+    
+}
+.maintext {
+    text-decoration: underline;
+    text-decoration-color: #FF4F5A;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-top: 280px;
+}
+
+/* Sub Main Style */
+.basetext1 {
+    color: #020E35;
+    font-size: 30px;
+}
+.basetext2 {
+    font-size: 90px;
+    color: #020E35; 
+    margin-left: 90px;
+}
+
+/* Footer Style */
+.footer {
+    background-color: #020E35;
+    margin-top: 50px;
+    padding: 3px;
+}
+@media screen and (max-width:600px) {
+    .header_content {
+        height: 2700px;
+    }
+}
+@media screen and (max-width:600px) {
+    .text1 {
+        font-size: 40px;
+        max-width: 100%;
+        line-height: 50px;
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width:600px) {
+    .basetext1 {
+        font-size: 20px;
+    
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .img1 {
+        margin: auto;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .aboutus {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:600px) {
+    .basetext2 {
+    font-size: 50px;
+    line-height: 70px;
+    margin: auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .maintext {
+        margin-top: 40px;
+    
+    }
+}
+@media screen and (max-width:600px) {
+    .footer {
+    font-size: 12px;
+    }
+}
+@media screen and (max-width:600px) {
+    .order__first {
+        order: 2;
+    }
+    .order__second {
+        order:2;
+    }
+}
+
+
+
+
+
+
+
