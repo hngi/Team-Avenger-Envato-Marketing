@@ -28,8 +28,12 @@ body {
 
 /* header */
 .jumbotron-custom {
-	background-image: url('../images/header-image.png'),
-		linear-gradient(127deg, rgb(245, 0, 87) 0%, rgba(255, 255, 255, 0) 100%); /* W3C */
+	/* background-image: url('../images/header-image.png'), */
+	background: linear-gradient(
+		127deg,
+		rgb(245, 0, 87) 0%,
+		rgba(255, 255, 255, 0) 100%
+	); /* W3C */
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: auto 100%;
@@ -211,4 +215,33 @@ footer {
 footer .copyright {
 	color: #000000;
 	border-left: 1px solid black;
+}
+
+/* ≥768px */
+/* ≥576px */
+/* 992 */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	/* body {
+		background-color: rgb(114, 102, 126);
+	} */
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+	/* body {
+		background-color: yellow;
+	} */
+
+	.client-custom .pink-border {
+		border-right: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	/* body {
+		background-color: green;
+	} */
+
+	.client-custom .pink-border {
+		border-right: none;
+	}
 }
