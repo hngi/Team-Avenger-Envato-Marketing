@@ -1,32 +1,543 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<title>We Market</title>
+	</head>
 
-    <title>Your Title Here</title>
-</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom pt-4 pb-3">
+			<div
+				class="container-fluid container-custom d-flex justify-content-between"
+			>
+				<a class="navbar-brand" href="#"
+					><img src="./images/We+Mkt.png" alt=""
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul
+						class="navbar-nav ml-auto mr-auto font-weight-bold text-uppercase"
+					>
+						<li class="nav-item active px-1">
+							<a class="nav-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item px-1">
+							<a class="nav-link" href="#">Team</a>
+						</li>
+						<li class="nav-item px-1">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item px-1">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+					</ul>
+					<button
+						class="btn my-2 my-sm-0 btn-submit font-weight-bold text-uppercase px-5 py-1"
+						type="submit"
+					>
+						Get Started
+					</button>
+				</div>
+			</div>
+		</nav>
+		<!-- header -->
+		<section class="jumbotron jumbotron-fluid jumbotron-custom">
+			<div class="container-fluid container-custom">
+				<div class="row">
+					<div class="col-lg-6 header-column">
+						<h1 class="display-4 border-bottom pb-4">
+							We lessen your worries
+							<span class="font-weight-bold">by handling your marketing!</span>
+						</h1>
+						<p class="lead pt-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+							molestias <br />
+							accusantium eos sunt corporis qui, quaerat sit quas totam
+							perferendis <br />
+							sapiente voluptas, modi nulla, voluptatem enim velit nobis
+							voluptatum at. <br />
+							bLorem ipsum dolor sit amet.
+						</p>
+						<div class="row d-flex mt-5 align-items-stretch">
+							<button
+								type="button"
+								class="btn btn-submit btn-lg col-xs-3 px-3 ml-3 font-weight-bold text-uppercase"
+							>
+								Get Started
+							</button>
+							<button
+								type="button"
+								class="btn btn-demo btn-lg col-xs-3 px-5 ml-4 font-weight-bold text-uppercase"
+							>
+								Demo
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img
+							src="./images/header-image.png"
+							class="img-fluid"
+							alt="Responsive image"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- client conatiainer -->
+		<section class="container-fluid client-custom">
+			<div class="container py-5">
+				<div class="row d-flex justify-content-center" style="height: 60vh;">
+					<div class="col-md-4 pink-border whole">
+						<p class="text-center">
+							<span class="numbers">230+</span> <br />
+							Clients Served
+						</p>
+					</div>
+					<div class="col-md-4 pink-border whole">
+						<p class="text-center">
+							<span class="numbers">100+</span> <br />
+							Completed Projects
+						</p>
+					</div>
+					<div class="col-md-4 whole">
+						<p class="text-center">
+							<span class="numbers">5000+</span> <br />
+							Working Hours Spent
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-<body>
-    <h1>Hello, world!</h1>
+		<!-- services -->
+		<section class="container">
+			<div
+				class="row d-flex justify-content-center w-50 ml-auto mr-auto services-custom"
+			>
+				<h2 class="display-4 font-weight-bold title">Our Services</h2>
+				<p class="text-center">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ullam
+					delectus reiciendis aperiam autem dolor sapiente harum quae aut
+					provident.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto"
+							src="./images/social-analytics.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">Social Analytics</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto"
+							src="./images/seo.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">SEO</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto"
+							src="./images/design.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">Design</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto"
+							src="./images/reports.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">Reports</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto"
+							src="./images/social-media.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">Social Media</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card text-center pt-3 mb-4 shadow-sm border-top-0">
+						<img
+							class="card-img-top ml-auto mr-auto online-ads"
+							src="./images/online-ads.png"
+							alt="Card image cap"
+						/>
+						<div class="card-body">
+							<h5 class="card-title font-weight-bold">Online Ads</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Pariatur ab, error provident blanditiis inventore magnam
+								excepturi placeat quisquam similique quas!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-end mb-4">
+				<div class="col-lg-6">
+					<p class="h4 font-weight-bold text-right more">More...</p>
+				</div>
+			</div>
+		</section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</body>
+		<!-- Our Team -->
+		<div class="container-fluid our-team">
+			<div class="container">
+				<div class="row pt-3 pb-5">
+					<div
+						class="col-lg-3 col-md 6 my-3 order-1 order-lg-0 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 12.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-6 my-3 order-2 order-lg-1 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 13.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 my-5 order-0 order-lg-2">
+						<h4 class="display-4 font-weight-bold out-team-title">Our Team</h4>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Praesentium cupiditate atque eaque saepe sunt eveniet recusandae
+							voluptatem dolor? Corrupti, veritatis accusantium! Reiciendis
+							explicabo assumenda error labore impedit fugit iusto, atque est,
+							hic adipisci veritatis odio quae veniam! Distinctio, eius
+							nesciunt.
+						</p>
+					</div>
+					<div
+						class="col-lg-3 col-md-6 my-3 order-3 order-lg-3 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 14.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-6 my-3 order-4 order-lg-4 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 16.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-6 my-3 order-5 order-lg-5 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 14.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-lg-3 col-md-6 my-3 order-6 order-lg-6 our-team-container"
+					>
+						<img
+							src="./images/Rectangle 12.png"
+							alt="..."
+							class="img-fluid our-team-img"
+						/>
+						<div class="overlay">
+							<div class="text">
+								<p class="h5 font-weight-bold">Johny Dane</p>
+								<p>Lead Web Developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Testimonials -->
+		<section class="container py-5">
+			<div class="testimonials py-5">
+				<div class="row">
+					<div class="col-lg-6">
+						<h4 class="display-4 font-weight-bold title">Testimonials</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+							magnam quibusdam aspernatur, quasi dolore tenetur consequatur a
+							vel, dicta aliquam, eligendi distinctio! Laborum tempore sint
+							cupiditate, atque accusamus ut ipsam nisi labore ratione totam,
+							qui, porro rerum iste voluptate nesciunt.
+						</p>
+					</div>
+					<div class="col-lg-6 testimonial-box py-4">
+						<div class="card shadow-sm pr-3">
+							<div class="card-body py-5">
+								<div class="card-title row">
+									<h4 class="col-6 font-weight-bold">Emery Johnson</h4>
+									<h5 class="col-6 text-right">Social Media Analyst</h5>
+								</div>
+								<p class="card-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquam quo enim repellat sint temporibus repudiandae
+									excepturi laborum ipsa ex doloribus.
+								</p>
+							</div>
+						</div>
+						<img src="./images/quote.png" alt="" class="img-fluid quote" />
+					</div>
+				</div>
+				<div class="row overflow-hidden">
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 12.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 13.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 14.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 13.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 16.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+					<div class="col-lg-2 col-sm-3 testimonial-image-container">
+						<img
+							src="./images/Rectangle 12.png"
+							alt=""
+							class="testimonial-img img-fluid"
+						/>
+						<div class="testimonial-overlay"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="container-fluid">
+			<div class="container">
+				<div class="text-center pt-4 pb-5">
+					<p class="h1 font-weight-bold product-text">
+						Be the first to know about our products
+					</p>
+					<form action="" class="d-flex justify-content-center">
+						<div class="form-row form-container m-0">
+							<div class="col">
+								<label class="sr-only" for="">Name</label>
+								<input
+									type="text"
+									class="form-control-custom"
+									id=""
+									placeholder="Email Address"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="btn btn-large px-4 m-0 font-weight-bold text-uppercase form-control-btn"
+							>
+								Subscribe
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="social-media border-top py-2">
+					<div class="row d-flex justify-content-between">
+						<div class="col-6">
+							<div class="row d-flex justify-content-start">
+								<div class="col-md-4 logo-copyright px-0">
+									<img
+										src="./images/We+Mkt.png"
+										alt=""
+										class="img-fluid logo-img"
+									/>
+								</div>
+								<div class="col-md-6 logo-copyright copyright">
+									<p>copyright 2020</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="row d-flex justify-content-end">
+								<div class="col col-md-2">
+									<img src="./images/git.png" alt="" class="" />
+								</div>
+								<div class="col col-md-2">
+									<img src="./images/be.png" alt="" class="" />
+								</div>
+								<div class="col col-md-2">
+									<img src="./images/ball.png" alt="" class="" />
+								</div>
+								<div class="col col-md-2">
+									<img src="./images/linkedin.png" alt="" class="" />
+								</div>
+								<div class="col col-md-2">
+									<img src="./images/twitter.png" alt="" class="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
